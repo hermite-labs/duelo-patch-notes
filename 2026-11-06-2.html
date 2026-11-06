@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 6 de novembro de 2026 · Contagem, pausa e parkour · Duelo Clássico</title>
+<meta name="description" content="Cada round agora começa com uma contagem regressiva, e qualquer um pode pausar a partida com **/pause**. O lobby ganhou uma torre de parkour e o painel de vida, corrida e escudo. A Lacraia e a Tarântu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/parkour-lobby.jpg); --capa-pos: center 35%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 6 de novembro de 2026</p>
+    <h1>Contagem, pausa e parkour</h1>
+    <p class="versao">Versão 2026-11-06-2 · <span class="commit">af8e04794</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Cada round agora começa com uma contagem regressiva, e qualquer um pode pausar a partida com <strong>/pause</strong>. O lobby ganhou uma torre de parkour e o painel de vida, corrida e escudo. A Lacraia e a Tarântula mostram a vida e viram pó assim que morrem, o Ceifador e os Tentáculos ficaram mais fracos e o Alquimista de Aço saiu do jogo.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">4</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">3</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">6</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">3</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">2</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#modos">Modos</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#interface">Interface</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Antes de cada round aparece uma contagem de 3, 2, 1 no meio da tela. Ninguém anda nem atira até o "LUTE!".</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o comando <strong>/pause</strong>: qualquer jogador pausa a partida para todos, e a tela mostra quem pausou. <strong>/pause</strong> de novo (ou <strong>/despausar</strong>) volta a partida depois de uma contagem de 3 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma torre de parkour no lobby, perto do espelho: postes e plataformas em espiral até o topo, a 12 m de altura.</span></li></ul>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/centipede.gif" alt="A arte da carta Lacraia" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Lacraia e Tarântula</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Agora elas mostram a barra de vida em cima: verde para você e seu time, vermelha para os inimigos, que só a veem quando ela está à vista.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Elas viram pó assim que a vida chega a zero, sem a pausa de antes.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Quando o dono morria, elas ficavam paradas no mapa. Agora viram pó junto.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/reaper.gif" alt="A arte da carta O Ceifador" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio <span class="lendaria">Lendária</span></span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>O Ceifador</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Vida do Ceifador:</strong> <span class="antes">500</span><span class="seta">⇒</span><span class="depois">250</span></span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Agora ele mostra a barra de vida em cima, como a Lacraia.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/tentacles.gif" alt="A arte da carta Tentáculos" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Tentáculos</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Duração:</strong> <span class="antes">1 min</span><span class="seta">⇒</span><span class="depois">25 s</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/wings.gif" alt="A arte da carta Asas" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Asas</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A capa sai quando você usa as Asas, como já acontecia com os Tentáculos.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/transmute.gif" alt="A arte da carta Alquimista de Aço" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Alquimista de Aço</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A carta saiu do jogo: ela não aparece mais nas ofertas nem no treino de cartas.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="modos">
+<h2>Modos</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O treino contra bots saiu do launcher: nesta versão de teste, só dá para jogar na partida do anfitrião.</span></li></ul>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">As salas agora são sempre do modo Clássico, no Santuário.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto"><strong>Vida no começo de cada round:</strong> <span class="antes">150</span><span class="seta">⇒</span><span class="depois">200</span></span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O painel de vida, corrida e escudo agora aparece também no lobby. Lá a vida não desce.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O painel da sala agora rola com a roda do mouse quando não cabe na tela.</span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Ao tirar a capa (<strong>O</strong>), ela se desfaz em pixels; ao vestir de novo, ela se tece dos ombros para baixo.</span></li></ul>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Depois do Continuar, o mouse ficava preso no lobby e não dava para clicar no painel da sala para escolher o time. Agora <strong>Alt</strong> solta o mouse; <strong>Alt</strong> de novo, ou um clique no mapa, volta a mirar.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao nova" href="2026-11-06.html"><span>Mais nova</span>Tarântula, Fadinha e Gancho</a><a class="nav-versao velha" href="2026-11-05-2.html"><span>Anterior</span>A partida do anfitrião</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
