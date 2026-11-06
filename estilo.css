@@ -1,0 +1,185 @@
+/* Os patch notes do Duelo Clássico (docs/PATCH-NOTES.md): as cores do launcher, o dourado sobre o
+   escuro quente; Cinzel nos títulos, Inter no texto. */
+:root {
+  --fundo: #0e0d08;
+  --fundo-2: #17150d;
+  --fundo-3: #1f1c11;
+  --linha: #3a3420;
+  --linha-forte: #6f6745;
+  --ouro: #e9dc8e;
+  --ouro-claro: #f6eeb8;
+  --ouro-escuro: #9b8f5c;
+  --texto: #d9d2b4;
+  --texto-dim: #9a9276;
+  --novo: #e9c25a;
+  --buff: #7fd18b;
+  --nerf: #e2685a;
+  --ajuste: #c9b98a;
+  --jogabilidade: #79b3e8;
+  --visual: #c99af0;
+  --correcao: #5fd0c4;
+  --desempenho: #f0a35a;
+  --largura: 960px;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--fundo); }
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 400 17px/1.65 Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--ouro); text-decoration: none; }
+a:hover { color: var(--ouro-claro); }
+h1, h2, h3 { font-family: Cinzel, Georgia, serif; color: var(--ouro-claro); font-weight: 600; letter-spacing: 0.04em; margin: 0; }
+strong { color: var(--ouro-claro); font-weight: 600; }
+code { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; background: var(--fundo-3); border: 1px solid var(--linha); padding: 0 5px; }
+
+/* --- o topo */
+.topo {
+  position: sticky; top: 0; z-index: 10;
+  background: rgba(14, 13, 8, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--linha);
+}
+.marca {
+  display: flex; align-items: center; gap: 12px;
+  max-width: var(--largura); margin: 0 auto; padding: 14px 16px;
+  font-family: Cinzel, Georgia, serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--ouro-claro);
+}
+.marca .sub { font-weight: 500; font-size: 13px; letter-spacing: 0.22em; color: var(--ouro-escuro); border-left: 1px solid var(--linha-forte); padding-left: 12px; }
+.losango { width: 12px; height: 12px; transform: rotate(45deg); border: 2px solid var(--ouro); box-shadow: 0 0 10px rgba(233, 220, 142, 0.45); }
+
+/* --- a abertura da lista */
+.abertura { max-width: var(--largura); margin: 0 auto; padding: 64px 16px 28px; }
+.abertura h1 { font-size: clamp(38px, 7vw, 64px); letter-spacing: 0.08em; text-transform: uppercase; }
+.abertura p { max-width: 640px; color: var(--texto-dim); font-size: 18px; margin: 14px 0 0; }
+
+/* --- a lista das versões */
+.lista { max-width: var(--largura); margin: 0 auto; padding: 8px 16px 64px; display: grid; gap: 18px; grid-template-columns: 1fr 1fr; }
+.cartao {
+  display: flex; flex-direction: column;
+  background: var(--fundo-2); border: 1px solid var(--linha);
+  color: var(--texto); overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.cartao:hover { border-color: var(--ouro-escuro); transform: translateY(-2px); color: var(--texto); }
+.cartao.destaque { grid-column: 1 / -1; }
+.cartao-capa { aspect-ratio: 16 / 7; background: var(--fundo-3) var(--capa) center / cover no-repeat; border-bottom: 1px solid var(--linha); }
+.cartao.destaque .cartao-capa { aspect-ratio: 16 / 6; }
+.cartao-corpo { padding: 18px 20px 20px; }
+.cartao h2 { font-size: 24px; line-height: 1.25; margin: 4px 0 8px; }
+.cartao.destaque h2 { font-size: 32px; }
+.cartao-resumo { margin: 0 0 14px; color: var(--texto-dim); font-size: 15.5px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+.sobre { margin: 0; font-size: 12.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ouro-escuro); font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: 12px; padding: 2px 8px; border: 1px solid currentColor; letter-spacing: 0.03em; }
+.chip-novo { color: var(--novo); } .chip-balanceamento { color: var(--buff); } .chip-jogabilidade { color: var(--jogabilidade); }
+.chip-visual { color: var(--visual); } .chip-correcao { color: var(--correcao); } .chip-desempenho { color: var(--desempenho); }
+.selo-rascunho, .faixa-rascunho { background: #5a1f17; color: #ffd8cf; }
+.selo-rascunho { margin-left: 10px; padding: 1px 8px; letter-spacing: 0.12em; }
+.faixa-rascunho { text-align: center; font-weight: 600; letter-spacing: 0.2em; font-size: 13px; padding: 8px 16px; }
+
+/* --- a página de uma versão: a capa */
+.heroi {
+  position: relative; min-height: 420px; display: flex; align-items: flex-end;
+  background: linear-gradient(to bottom, rgba(14, 13, 8, 0.15) 0%, rgba(14, 13, 8, 0.55) 55%, var(--fundo) 100%), var(--capa) var(--capa-pos, center 40%) / cover no-repeat, var(--fundo-3);
+  border-bottom: 1px solid var(--linha);
+}
+.heroi-dentro { width: 100%; max-width: var(--largura); margin: 0 auto; padding: 0 16px 34px; }
+.heroi h1 { font-size: clamp(34px, 6vw, 58px); line-height: 1.1; text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7); margin: 8px 0 10px; }
+.heroi .sobre { text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); color: var(--ouro); }
+.versao { margin: 0; color: var(--texto-dim); font-size: 14px; letter-spacing: 0.04em; }
+.commit { font-family: ui-monospace, "SFMono-Regular", Menlo, monospace; font-size: 13px; }
+
+.versao-pagina { max-width: var(--largura); margin: 0 auto; padding: 30px 16px 70px; }
+.resumo { font-size: 19px; line-height: 1.7; color: var(--texto); border-left: 2px solid var(--ouro); padding: 2px 0 2px 20px; margin-bottom: 30px; }
+.resumo p { margin: 0 0 10px; }
+.resumo p:last-child { margin-bottom: 0; }
+
+/* --- o painel: o filtro e o índice */
+.painel { background: var(--fundo-2); border: 1px solid var(--linha); padding: 16px 18px; margin-bottom: 40px; }
+.filtros { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filtros .rotulo { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ouro-escuro); font-weight: 600; margin-right: 6px; }
+.filtro, .limpar {
+  font: 500 13.5px Inter, system-ui, sans-serif; color: var(--texto);
+  background: transparent; border: 1px solid var(--linha-forte); padding: 5px 11px; cursor: pointer;
+  display: inline-flex; gap: 8px; align-items: center;
+}
+.filtro .n { color: var(--texto-dim); font-size: 12px; }
+.filtro:hover, .limpar:hover { border-color: var(--ouro); }
+.filtro[aria-pressed="true"] { background: var(--ouro); color: var(--fundo); border-color: var(--ouro); }
+.filtro[aria-pressed="true"] .n { color: var(--fundo-3); }
+.limpar { border-style: dashed; color: var(--texto-dim); }
+.indice { list-style: none; margin: 14px 0 0; padding: 14px 0 0; border-top: 1px solid var(--linha); display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.indice a { font-family: Cinzel, Georgia, serif; font-size: 14px; letter-spacing: 0.06em; }
+
+/* --- as seções */
+.secao { margin: 0 0 54px; scroll-margin-top: 80px; }
+.secao > h2, .secao summary h2 {
+  font-size: 26px; text-transform: uppercase; letter-spacing: 0.1em;
+  display: flex; align-items: center; gap: 16px; margin-bottom: 22px;
+}
+.secao > h2::after { content: ""; flex: 1; height: 1px; background: linear-gradient(to right, var(--linha-forte), transparent); }
+.secao-texto { margin: 0 0 16px; color: var(--texto-dim); }
+
+/* um bloco: uma carta, um modo, uma regra (a arte ou a foto ao lado, o texto e os itens) */
+.bloco { background: var(--fundo-2); border: 1px solid var(--linha); border-top: 2px solid var(--ouro-escuro); padding: 20px 22px; margin-bottom: 16px; }
+.bloco.com-midia { display: grid; grid-template-columns: 300px 1fr; gap: 24px; align-items: start; }
+.bloco h3 { font-size: 22px; margin-bottom: 8px; }
+.bloco p { margin: 0 0 12px; }
+.bloco-midia { display: flex; flex-direction: column; gap: 12px; }
+.bloco.com-midia .item { grid-template-columns: 1fr; gap: 5px; }
+.carta { margin: 0; border: 1px solid var(--linha-forte); background: #000; }
+.carta .arte { display: block; width: 100%; aspect-ratio: 3 / 2; image-rendering: pixelated; }
+.carta figcaption { padding: 7px 10px; border-top: 1px solid var(--linha); background: var(--fundo-3); }
+.carta-escola { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ouro-escuro); font-weight: 600; }
+.lendaria { color: var(--novo); margin-left: 6px; }
+.foto { margin: 0; border: 1px solid var(--linha-forte); }
+.foto img { display: block; width: 100%; height: auto; }
+.foto figcaption { padding: 7px 10px; font-size: 13.5px; color: var(--texto-dim); background: var(--fundo-3); border-top: 1px solid var(--linha); }
+
+/* os itens: a tag, o texto */
+.itens { list-style: none; margin: 4px 0 0; padding: 0; }
+.itens.soltos { background: var(--fundo-2); border: 1px solid var(--linha); padding: 10px 22px; margin-bottom: 16px; }
+.item { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 9px 0; border-bottom: 1px solid rgba(58, 52, 32, 0.6); }
+.item:last-child { border-bottom: 0; }
+.tag {
+  align-self: start; justify-self: start; margin-top: 3px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 2px 7px; border: 1px solid currentColor; white-space: nowrap;
+}
+.tag-novo { color: var(--novo); } .tag-buff { color: var(--buff); } .tag-nerf { color: var(--nerf); } .tag-ajuste { color: var(--ajuste); }
+.tag-jogabilidade { color: var(--jogabilidade); } .tag-visual { color: var(--visual); } .tag-correcao { color: var(--correcao); }
+.tag-desempenho { color: var(--desempenho); }
+.antes { color: var(--texto-dim); text-decoration: line-through; text-decoration-color: rgba(154, 146, 118, 0.6); }
+.seta { color: var(--ouro); margin: 0 8px; }
+.depois { color: var(--ouro-claro); font-weight: 600; }
+
+/* filtrando: o que não tem a tag some */
+.filtrando .item:not(.mostra), .filtrando .bloco:not(.mostra), .filtrando .itens.soltos:not(.mostra), .filtrando .secao:not(.mostra), .filtrando .secao-texto { display: none; }
+.vazio { color: var(--texto-dim); text-align: center; padding: 30px; border: 1px dashed var(--linha-forte); }
+
+/* --- entre versões, e o rodapé */
+.navegacao { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 60px; }
+.nav-versao { border: 1px solid var(--linha); background: var(--fundo-2); padding: 16px 18px; font-family: Cinzel, Georgia, serif; font-size: 18px; color: var(--ouro-claro); }
+.nav-versao span { display: block; font-family: Inter, sans-serif; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ouro-escuro); margin-bottom: 4px; }
+.nav-versao.velha { grid-column: 2; text-align: right; }
+.nav-versao:hover { border-color: var(--ouro-escuro); }
+.rodape { border-top: 1px solid var(--linha); color: var(--texto-dim); font-size: 13.5px; text-align: center; padding: 26px 16px 40px; }
+.rodape p { margin: 0; }
+
+@media (max-width: 760px) {
+  body { font-size: 16px; }
+  .lista { grid-template-columns: 1fr; }
+  .bloco.com-midia { grid-template-columns: 1fr; }
+  .item { grid-template-columns: 1fr; gap: 4px; }
+  .heroi { min-height: 300px; }
+  .navegacao { grid-template-columns: 1fr; }
+  .nav-versao.velha { grid-column: auto; text-align: left; }
+  .marca .sub { display: none; }
+}
