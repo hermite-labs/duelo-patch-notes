@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 9 de novembro de 2026 · Raio, Vazio Roxo e o Santuário flutuante · Duelo Clássico</title>
+<meta name="description" content="Chegaram duas cartas mágicas novas: o Raio, que frita quem leva, e o Vazio Roxo, uma esfera que atravessa tudo e mata na hora quem ela pega. O Espelho, a Anulação e o Piscar foram refeitos, a Fadinha ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/vazio-roxo-estudio.jpg); --capa-pos: center 45%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 9 de novembro de 2026</p>
+    <h1>Raio, Vazio Roxo e o Santuário flutuante</h1>
+    <p class="versao">Versão 2026-11-09-3-mac · <span class="commit">20698796e</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegaram duas cartas mágicas novas: o Raio, que frita quem leva, e o Vazio Roxo, uma esfera que atravessa tudo e mata na hora quem ela pega. O Espelho, a Anulação e o Piscar foram refeitos, a Fadinha agora é passiva, e a Lacraia e a Tarântula dobraram de tamanho. O Santuário virou uma ilha flutuante sem paredes invisíveis, com chão que dá para cavar e escada até o telhado do templo, e as partidas em times agora podem ter até 3 times.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">16</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">15</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">2</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">4</span></button><button class="filtro" data-filtro="desempenho" aria-pressed="false">Desempenho<span class="n">1</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#partida">Partida</a></li><li><a href="#balanceamento">Balanceamento</a></li><li><a href="#interface">Interface</a></li><li><a href="#desempenho">Desempenho</a></li></ol>
+  </nav>
+  <section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/void.gif" alt="A arte da carta Vazio Roxo" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Vazio Roxo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta mágica que tira a sua arma por até 20 s: segure o tiro e uma esfera do vazio cresce na ponta dos seus dedos; solte e ela é lançada. A carta volta em 60 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A esfera chega ao tamanho máximo em 2,5 s, e uma barra no canto de baixo avisa quando chegou. Dá para segurar por até 10 s; depois disso ela é lançada sozinha.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Enquanto segura, você anda devagar, como se estivesse agachado.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A esfera atravessa tudo pelo caminho, paredes e chão, até 42 m.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Se ela passar a até 3 m de um inimigo, para e puxa ele para dentro. Quem é puxado não consegue andar nem atirar.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem ela pega morre na hora, e ela explode em volta, tirando até 400 de vida de quem estiver perto. Quanto maior a esfera, maior a explosão.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/lightning.gif" alt="A arte da carta Raio" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Raio</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta mágica que, por 10 s, troca o seu tiro por raios que saem dos seus dedos, até 45 m. A carta volta em 20 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">São 3 raios seguidos, e cada um volta em 2 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem é atingido leva 30 de dano e fica fritado por 1,2 s: quase parado, sem conseguir atirar e com o corpo manchado de preto por um tempo.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/mirror.gif" alt="A arte da carta Espelho" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Gelo</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Espelho</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora, por 6 s, toda bala inimiga que te alcança volta teleguiada para quem atirou. Antes, era uma armadilha que devolvia só a próxima bala.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Recarga:</strong> <span class="antes">15 s</span><span class="seta">⇒</span><span class="depois">25 s</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/dispel.gif" alt="A arte da carta Anulação" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Anulação</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora é uma explosão anti-magia na hora: todo feitiço inimigo ativo a até 15 m de você se desfaz, e as criaturas invocadas caem (Ceifador, Lacraia, Tarântula e Fadinha). Antes, por 4 s, suas balas desfaziam os feitiços que tocavam.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Recarga:</strong> <span class="antes">12 s</span><span class="seta">⇒</span><span class="depois">20 s</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/blink.gif" alt="A arte da carta Piscar" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Piscar</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora são 3 saltos seguidos, um a cada toque da tecla, em até 6 s.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Distância do salto:</strong> <span class="antes">6 m</span><span class="seta">⇒</span><span class="depois">8 m</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Logo depois de cada salto, nada te fere por um instante.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Recarga:</strong> <span class="antes">8 s</span><span class="seta">⇒</span><span class="depois">12 s</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/fairy.gif" alt="A arte da carta Fadinha" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Fadinha</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A Fadinha agora é passiva: ela entra sozinha assim que pode, sem você precisar ativar.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Lacraia e Tarântula</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">A Lacraia e a Tarântula agora têm o dobro do tamanho, e a mordida ficou mais forte junto.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/alquimista.gif" alt="A arte da carta Alquimista de Fogo" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo <span class="lendaria">Lendária</span></span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Alquimista de Fogo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O fogo agora deixa pequenas chamas com fumacinha na marca preta por alguns segundos.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A explosão não solta mais as nuvens de poeira depois do fogo.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/samurai.gif" alt="A arte da carta Samurai X" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio <span class="lendaria">Lendária</span></span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Samurai X</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Com a carta ativa, o player usa um chapéu de palha de samurai.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">As partidas em times agora podem ter até 3 times: o anfitrião escolhe 2 ou 3, e o terceiro é o time verde, com o seu círculo verde no chão do lobby.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O lobby agora é amarelo.</span></li></ul>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Santuário</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O Santuário agora é uma ilha flutuando sobre um mar de nuvens.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Não há mais paredes invisíveis: quem passa da beirada do mapa cai. Numa luta, cair do mapa é morte.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O chão ficou bem mais fundo, e dá para cavar até o fim e cair por baixo do mapa.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A porta do templo agora fica entreaberta, e lá dentro uma escada sobe até o telhado.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Vida do Ceifador:</strong> <span class="antes">250</span><span class="seta">⇒</span><span class="depois">400</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Duração da Gatling:</strong> <span class="antes">20 s</span><span class="seta">⇒</span><span class="depois">6 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Dano da Gatling:</strong> <span class="antes">+50%</span><span class="seta">⇒</span><span class="depois">−10%</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">A carta de arma Demolição não aparece mais nas ofertas.</span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Morto numa partida, um painel mostra quem você está assistindo.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">A câmera agora começa num zoom de 0,67, mais perto do player.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A aba Controles do menu mostra quanto a câmera está com zoom, e a rodinha do mouse mostra o zoom enquanto gira.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A música do lobby agora tem volume próprio na aba Áudio, que começa em 35%.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">O player agora começa sem capa. A tecla <strong>O</strong> coloca e tira, como antes.</span></li></ul>
+</section><section class="secao" id="desempenho">
+<h2>Desempenho</h2>
+<ul class="itens soltos"><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">O jogo abre bem mais rápido na primeira vez depois de uma atualização: cerca de 8 s, antes uns 34 s. Uma barra embaixo do logo mostra o carregamento.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-08-mac.html"><span>Anterior</span>Samurai X e o lobby vazio</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
