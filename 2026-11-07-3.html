@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 7 de novembro de 2026 · Luz à noite, Câmera Lenta e Gatling · Duelo Clássico</title>
+<meta name="description" content="À noite os braseiros agora iluminam o Santuário de verdade, e a noite cai bem mais vezes. O escudo da partida passou a ser o do lobby, e a bolha virou carta. Chegaram duas cartas mágicas, a Câmera Len">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/portao-noite.jpg); --capa-pos: center 45%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 7 de novembro de 2026</p>
+    <h1>Luz à noite, Câmera Lenta e Gatling</h1>
+    <p class="versao">Versão 2026-11-07-3 · <span class="commit">3b2969450</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>À noite os braseiros agora iluminam o Santuário de verdade, e a noite cai bem mais vezes. O escudo da partida passou a ser o do lobby, e a bolha virou carta. Chegaram duas cartas mágicas, a Câmera Lenta e a Gatling, e os braços dos Tentáculos agora quebram com tiros. A câmera chega perto do player quando você atira sem parar, e as pernas não tropeçam mais ao aterrissar.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">7</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">4</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">8</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">3</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">2</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#cartas-de-arma">Cartas de arma</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#interface">Interface</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O escudo da partida agora é o mesmo do lobby: aparece enquanto você segura o botão, aguenta até 4 s em pé e volta 6 s depois de baixar. Ele para as balas até levar 400 de dano.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quando você atira sem parar, a câmera chega perto do player, mais quanto mais tiros por segundo: com a metralhadora fica bem perto, com a pistola só um pouco. Quando você para, ela volta.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">À noite e ao anoitecer os braseiros agora iluminam o chão, as paredes e as colunas em volta, com sombra suave. Antes muitos iluminavam só um pedaço de parede, ou nada.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A noite ficou bem mais comum: agora um round em quatro é de noite. Antes era um em vinte.</span></li></ul>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/slow.gif" alt="A arte da carta Câmera Lenta" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Câmera Lenta</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta mágica que, por 5 s, faz os tiros dos seus inimigos saírem em câmera lenta, no mapa todo. Os seus tiros continuam normais. Ela volta em 25 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">É a primeira carta global: quando alguém a usa, todos veem a carta no meio da tela, com o nome de quem usou.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/gatling.gif" alt="A arte da carta Gatling" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Gatling</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta mágica que, por 20 s, transforma sua arma numa metralhadora: balas sem fim, muito rápidas e retas, com 50% a mais de dano. Ela volta em 90 s.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/tentacles.gif" alt="A arte da carta Tentáculos" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Tentáculos</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agora as balas acertam os braços: dois tiros quebram um braço, que parte onde a bala acertou, e o pedaço cai no chão.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Com dois braços inteiros você continua andando e subindo. Com um só, os Tentáculos te soltam e você cai.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Os outros players não atravessam mais os braços.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Nas quinas, os braços às vezes ficavam soltos no ar, sem segurar nada. Agora eles sempre agarram alguma coisa.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/centipede.gif" alt="A arte da carta Lacraia" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Lacraia e Tarântula</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">As cartas de melhoria da Lacraia agora valem também para a Tarântula.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Se você tem a Lacraia, a Tarântula ou o Ceifador, toda rodada de cartas traz pelo menos uma carta de melhoria do seu monstro.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-de-arma">
+<h2>Cartas de arma</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Escudo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a carta <strong>Bolha</strong>: o escudo vira uma bolha à sua volta e segura o que vem de todos os lados.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">A Bolha Larga agora se chama <strong>Escudo Largo</strong>: deixa o escudo 40% maior.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">A <strong>Pena</strong> agora só dá os +2 pulos no ar, já que o escudo de placa virou o de todos.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">Com o escudo novo, o <strong>Reflexo</strong> faz ele aguentar 8 s em pé, o <strong>Escudo Ágil</strong> faz ele voltar em 3,6 s (e fica 20% menor) e o <strong>Baluarte</strong> faz ele aguentar 6 s e ficar 60% maior (e você anda 15% mais devagar).</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Com <strong>Manter o mapa</strong> ligado, a partida inteira agora é numa tarde de sol.</span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O zoom de quando você atira sem parar pode ser desligado em <strong>Configurações</strong> › <strong>Controles</strong> › <strong>Câmera</strong>. Ele vem ligado.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Em cima da cabeça dos outros players agora aparecem só o nome e a barra de vida, sem o número.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A tecla <strong>F12</strong> tira um print da tela e salva na pasta <code>prints</code>, ao lado do jogo.</span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/braseiro-noite.jpg" alt="Um braseiro iluminando uma sala escura do Santuário" loading="lazy"><figcaption>Um braseiro iluminando uma sala escura do Santuário</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>A noite no Santuário</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A luz dos braseiros rebate nas paredes e clareia o resto do lugar, e o fogo tremula.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foram colocados dois braseiros na porta do templo.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">As pernas do player davam um tranco ao aterrissar de um pulo e quando ele corria contra uma parede alta.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao nova" href="2026-11-08.html"><span>Mais nova</span>Samurai X e o lobby vazio</a><a class="nav-versao velha" href="2026-11-06.html"><span>Anterior</span>Tarântula, Fadinha e Gancho</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>

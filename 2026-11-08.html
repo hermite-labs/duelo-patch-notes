@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 8 de novembro de 2026 · Samurai X e o lobby vazio · Duelo Clássico</title>
+<meta name="description" content="Chegou uma carta mágica lendária, o Samurai X: por 30 s você troca a arma por uma espada e o escudo por uma guarda que devolve as balas. O lobby agora é um lobby vazio, e nas partidas em times você es">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/samurai-estudio.jpg); --capa-pos: center 40%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 8 de novembro de 2026</p>
+    <h1>Samurai X e o lobby vazio</h1>
+    <p class="versao">Versão 2026-11-08 · <span class="commit">097eaa5c1</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegou uma carta mágica lendária, o Samurai X: por 30 s você troca a arma por uma espada e o escudo por uma guarda que devolve as balas. O lobby agora é um lobby vazio, e nas partidas em times você escolhe o seu time pisando num círculo no chão. Embaixo do fps agora aparece o ms de todo mundo, e o lobby ganhou música.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">13</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">3</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">1</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#partida">Partida</a></li><li><a href="#interface">Interface</a></li><li><a href="#visual-e-som">Visual e som</a></li></ol>
+  </nav>
+  <section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/samurai.gif" alt="A arte da carta Samurai X" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio <span class="lendaria">Lendária</span></span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Samurai X</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta mágica lendária que, por 30 s, te transforma num samurai: você fica 30% mais rápido, pula mais alto, ganha um pulo duplo e não leva dano de queda. Ela volta em 90 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A arma vira uma espada. O tiro corta, em sequência de três cortes: 34, 34 e 44 de dano, e o terceiro joga longe. Cada corte dá um passo na direção do inimigo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Correndo, o tiro vira uma estocada (44). No ar, um corte (40), uma vez por pulo. Agachado no ar, você mergulha e acerta todo mundo em volta quando cai (46), derrubando quem pegar.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O <strong>E</strong> vira um passo relâmpago, também no ar. Um tiro logo depois dele é um corte relâmpago (46). O <strong>Q</strong> continua sendo o rolamento.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem leva um corte fica atordoado um instante e não consegue atirar.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Depois de 5 s sem atacar, o samurai guarda a espada na bainha. O próximo golpe é o saque: um corte largo e forte, de 68 de dano. Correndo, ele atravessa quem estiver no caminho.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O botão do escudo vira a guarda: enquanto você segura, as balas que vêm pela frente voltam para onde você mira. A guarda devolve a bala normal e a da Bala Grande; duas Balas Grandes atravessam.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A espada vai ao encontro de cada bala antes dela chegar: na cabeça, dos lados ou nas pernas.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A guarda também segura a espada de outro samurai. Levantada no último instante, ela apara o golpe e deixa quem atacou desequilibrado por quase 1 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O <strong>R</strong> trava a mira num inimigo a até 15 m: a câmera fica nele e os cortes vão na direção dele. A trava solta se ele passar de 20 m, morrer ou sumir de vista.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O lobby agora é um lobby vazio. Os players aparecem perto do meio, cada um num lugar diferente.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Nas partidas em times, o time agora se escolhe pisando num dos dois círculos do chão do lobby, o vermelho ou o azul. Quem não estiver em nenhum fica de fora da partida.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Os times não são mais completados com bonecos nem equilibrados sozinhos: vale até 4 contra 1, basta ter alguém em cada círculo.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">No lobby, quem cai para fora do chão volta para onde os players aparecem, em vez de morrer.</span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Embaixo do fps, no canto de cima, agora aparece o ms de todos os players da sala, para todo mundo.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">A tecla <strong>Tab</strong> não fica mais pulando entre os painéis da sala.</span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O lobby ganhou uma música própria, que toca enquanto não há partida e troca suavemente com a da partida. Ela segue o volume da música (<strong>F7</strong>).</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao nova" href="2026-11-09-3.html"><span>Mais nova</span>Raio, Vazio Roxo e o Santuário flutuante</a><a class="nav-versao velha" href="2026-11-07-3.html"><span>Anterior</span>Luz à noite, Câmera Lenta e Gatling</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>

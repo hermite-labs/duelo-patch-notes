@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 11 de novembro de 2026 · O breu dos ratos e o Ultra baixo · Duelo Clássico</title>
+<meta name="description" content="Chegou o breu: rounds no escuro total, com um enxame de ratos que morde quem sai da luz e um lampião que você precisa recarregar nos braseiros. O jogo ficou bem mais leve nas placas de vídeo sem ray t">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/breu-ratos.jpg); --capa-pos: center 60%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 11 de novembro de 2026</p>
+    <h1>O breu dos ratos e o Ultra baixo</h1>
+    <p class="versao">Versão 2026-11-11 · <span class="commit">f169056df</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegou o breu: rounds no escuro total, com um enxame de ratos que morde quem sai da luz e um lampião que você precisa recarregar nos braseiros. O jogo ficou bem mais leve nas placas de vídeo sem ray tracing, e chegou um gráfico novo, o Ultra baixo, o mais leve de todos, que essas placas agora usam da primeira vez. As noites com braseiros e as árvores pegando fogo também pesam menos, e o dash do <strong>E</strong> foi refeito.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">9</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">2</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">3</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">3</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">1</span></button><button class="filtro" data-filtro="desempenho" aria-pressed="false">Desempenho<span class="n">4</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#modos">Modos</a></li><li><a href="#balanceamento">Balanceamento</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#desempenho">Desempenho</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="modos">
+<h2>Modos</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Breu</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o breu: um round no escuro total, sem lua, sem céu e sem lâmpadas. Ele sai em cerca de 1 a cada 10 rounds, e só alguns braseiros continuam acesos.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">3 s depois do round começar, os ratos saem. Quem passa 1,5 s no escuro é mordido, e a mordida começa em 20 de vida por segundo e vai até 70, até você voltar para a luz ou morrer.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">No breu, o seu lampião acende sozinho e mantém os ratos longe de você. O óleo dura 30 s, a luz diminui conforme ele acaba e começa a falhar abaixo de 25%.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Para recarregar o lampião, fique a até 3 m de um braseiro aceso: ele enche em 1,5 s. Perto dos braseiros os ratos também não chegam.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A lanterna (<strong>L</strong>) funciona junto com o lampião e espanta os ratos por onde passa. O fogo e o escudo erguido também afastam os ratos.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">De vez em quando um rato passa pela sombra do lampião e morde: 8 de dano.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">No breu toca uma música de suspense própria, no lugar da trilha da partida.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Por enquanto, se alguém da partida joga numa placa de vídeo sem ray tracing, o breu não é sorteado.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">O breu sai das noites: agora a noite vem em cerca de 1 a cada 7 rounds, e antes vinha em 1 a cada 4.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Distância do dash:</strong> <span class="antes">cerca de 2,7 m</span><span class="seta">⇒</span><span class="depois">cerca de 3,6 m</span></span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O dash do <strong>E</strong> agora é como o passo do Samurai X, só que menor, com o mesmo estalo, rastro e poeira nos pés.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O logo na tela de carregamento ficou bem menor.</span></li></ul>
+</section><section class="secao" id="desempenho">
+<h2>Desempenho</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Ultra baixo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado um gráfico novo, o <strong>Ultra baixo</strong>, o mais leve de todos, para placas de vídeo fracas. Ele fica em <strong>F6</strong> → Efeitos.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Ele tira a luz rebatida, as sombras das tochas e das lâmpadas, a fumaça, a poeira e as nuvens, e mantém a sombra do sol.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Nele, as explosões soltam menos estilhaços, o corpo de quem morre se desfaz em poucos pedaços que somem, e o escudo fica mais simples, com o mesmo brilho.</span></li><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">Numa partida real de 6 jogadores, numa RX 580 (uma placa sem ray tracing), o Ultra baixo roda a cerca de 59 fps, contra cerca de 27 fps no Alto.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Ele ainda está em desenvolvimento, e o visual vai melhorar.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Placas sem ray tracing</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">O jogo ficou cerca de 2 vezes mais rápido nas placas de vídeo sem ray tracing, como GTX 1060, GTX 1650, RX 580 e as integradas: na mesma partida, numa RX 580, de cerca de 12 fps para cerca de 27 fps no Alto.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Nessas placas, o jogo agora abre no Ultra baixo da primeira vez. Se você já tinha escolhido outro gráfico, um aviso ao abrir lembra que o Ultra baixo é bem mais leve, e a aba Vídeo recomenda ele.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Fogo e noite</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">As noites com braseiros acesos ficaram mais leves, em todos os gráficos.</span></li><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">As árvores pegando fogo pesam menos: a fumaça preta ficou mais leve, e no Alto o fogo agora ilumina com 4 luzes, 1 com sombra, em vez de 6 luzes, 2 com sombra.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">O dash do <strong>E</strong> dava uma travadinha na animação no meio; agora não trava mais.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-09-3.html"><span>Anterior</span>Raio, Vazio Roxo e o Santuário flutuante</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
