@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 12 de novembro de 2026 · Espadas de Pedra, Sentinela e Raio da Morte · Duelo Clássico</title>
+<meta name="description" content="Chegaram cinco cartas mágicas novas: as Espadas de Pedra, a Sentinela, o Raio da Morte, a Fumaça Venenosa e a Cura, esta só no modo times. Há duas regras da casa novas: corações de vida espalhados pel">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/espadas-pedra.jpg); --capa-pos: center 45%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 12 de novembro de 2026</p>
+    <h1>Espadas de Pedra, Sentinela e Raio da Morte</h1>
+    <p class="versao">Versão 2026-11-12 · <span class="commit">0c46f3cba</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegaram cinco cartas mágicas novas: as Espadas de Pedra, a Sentinela, o Raio da Morte, a Fumaça Venenosa e a Cura, esta só no modo times. Há duas regras da casa novas: corações de vida espalhados pelo mapa, e uma lista para tirar cartas do sorteio da partida. O Espelho ficou mais curto, a Lacraia e a Tarântula ficaram mais fortes e a Gatling tira mais do dano das cartas.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">19</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">4</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#balanceamento">Balanceamento</a></li></ol>
+  </nav>
+  <section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/swords.gif" alt="A arte da carta Espadas de Pedra" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Espadas de Pedra</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que transforma o chão de pedra à sua volta em 5 espadas. Elas sobem e ficam flutuando sobre a sua cabeça, apontadas para a frente, por 20 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Enquanto elas estão no ar, sua arma some, e cada tiro lança uma espada, reta e rápida, para onde você mira. Cada espada que acerta tira 100 de vida.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Com a carta ativa, o <strong>R</strong> trava a mira num inimigo a até 40 m, e as espadas são lançadas onde ele vai estar quando chegarem. O travamento se solta se ele passar de 50 m.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 40 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/sentry.gif" alt="A arte da carta Sentinela" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Sentinela</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que põe uma sentinela no chão onde você mira, até 18 m. Por 25 s ela gira sozinha e atira em todo inimigo que passar a até 25 m dela, 9 de dano por bala.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">As balas inimigas param nela, e ela quebra depois de levar 220 de dano.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 30 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/deathray.gif" alt="A arte da carta Raio da Morte" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Raio da Morte</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que põe um braço mecânico nas suas costas por 20 s. Ele mira sozinho no inimigo mais perto, até 30 m, e a cada 6 s dispara nele um laser vermelho que não erra: 40 de dano.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Antes de cada disparo o braço carrega por quase 1 s. Se o alvo rolar, piscar ou se esconder atrás de uma parede nesse tempo, o laser erra e põe fogo no chão.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Com o braço nas costas você não rola, e anda devagar enquanto ele carrega e logo depois do disparo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 40 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/smoke.gif" alt="A arte da carta Fumaça Venenosa" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Fumaça Venenosa</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que faz o seu próximo tiro, em até 20 s, soltar uma nuvem de veneno onde bater. A nuvem cresce até 4 m e dura 8 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem é do outro time e fica dentro dela perde 6 de vida a cada 0,5 s, e o veneno continua por 3 s depois que sai.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 20 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/heal.gif" alt="A arte da carta Cura" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Gelo</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Cura</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta para o modo times: por 8 s aparece um <strong>R</strong> sobre o companheiro mais perto da sua mira (ou de você). Aperte <strong>R</strong> e ele recupera 80 de vida.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 25 s depois.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Vidas no mapa</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma regra da casa que espalha corações pelo mapa. Em cada round, o primeiro aparece aos 15 s e os outros a cada 25 s, no máximo 2 de cada vez.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem está ferido e passa por um coração recupera 30 de vida. Quem está com a vida cheia passa por ele, e o coração fica para os outros.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Cartas no sorteio</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Na criação da partida, uma seção nova mostra todas as cartas que podem ser sorteadas, com busca por nome. Desmarque uma carta e ela não aparece em nenhuma oferta da partida.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Duração do Espelho:</strong> <span class="antes">6 s</span><span class="seta">⇒</span><span class="depois">3 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Vida da Lacraia:</strong> <span class="antes">400</span><span class="seta">⇒</span><span class="depois">600</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Vida da Tarântula:</strong> <span class="antes">600</span><span class="seta">⇒</span><span class="depois">750</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Dano das cartas na Gatling:</strong> <span class="antes">−10%</span><span class="seta">⇒</span><span class="depois">−35%</span></span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-11.html"><span>Anterior</span>O breu dos ratos e o Ultra baixo</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
