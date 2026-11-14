@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 14 de novembro de 2026 · Fundição abandonada, minimapa e o Gato de Merda · Duelo Clássico</title>
+<meta name="description" content="Chegou um mapa novo, a Fundição abandonada: quase todo de ferro, ele quebra pouco e pesa bem menos que o Santuário. Chegaram duas cartas mágicas, a Target e o Gato de Merda, a primeira carta troll, e ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/fundicao-visao-geral.jpg); --capa-pos: center 55%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 14 de novembro de 2026</p>
+    <h1>Fundição abandonada, minimapa e o Gato de Merda</h1>
+    <p class="versao">Versão 2026-11-14 · <span class="commit">df4b1aca0</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegou um mapa novo, a Fundição abandonada: quase todo de ferro, ele quebra pouco e pesa bem menos que o Santuário. Chegaram duas cartas mágicas, a Target e o Gato de Merda, a primeira carta troll, e o Véu Fantasma foi refeito. Agora tem minimapa, chat e uma ficha com os números das suas cartas, a tela mostra quem te matou, quem vence o round tem 5 s para comemorar e, na sala, cada um avisa quando está pronto. O rolamento e o dash ganharam cargas, cada escudo tem a cor do seu player e o <strong>Z</strong> virou luneta. As balas grandes quebram menos o mapa, e o modo lite tira do sorteio as cartas que mais o destroem.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">15</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">14</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">18</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">8</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">6</span></button><button class="filtro" data-filtro="desempenho" aria-pressed="false">Desempenho<span class="n">1</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#cartas-de-arma">Cartas de arma</a></li><li><a href="#partida">Partida</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#balanceamento">Balanceamento</a></li><li><a href="#online">Online</a></li><li><a href="#interface">Interface</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Fundição abandonada</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado um mapa novo, a Fundição abandonada: o pátio de uma fundição desativada, com um galpão para cada time, um fosso no meio e muito ferro para se esconder. O anfitrião escolhe o mapa em <strong>Mapa</strong>, nas regras da sala.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Quase tudo é de ferro, o chão também: a bala comum não fura, e as explosões abrem buracos bem menores. Só as pilhas de tijolos quebram de verdade, e o caldeirão pendurado cai no fosso se uma explosão cortar o cabo dele.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Na Fundição é sempre de dia: sem noite e sem breu.</span></li><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">É o mapa leve, para quem tem PC mais fraco: na luta, ele pesa de 2 a 3 vezes menos que o Santuário na placa de vídeo, e não trava nas explosões.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Lá, o Alquimista de Aço só puxa pedra dos montes de escória dos cantos e do fundo do fosso, e a Lacraia e a Tarântula não furam o ferro.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/target.gif" alt="A arte da carta Target" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Target</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que, por 10 s, deixa o <strong>R</strong> travar a sua mira no inimigo mais perto dela, até 40 m. A câmera segue ele, e cada tiro sai mirando onde ele vai estar quando a bala chegar.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O <strong>R</strong> de novo solta a mira, e ela se solta sozinha se ele passar de 50 m. Com a carta, o <strong>R</strong> não recarrega: a arma recarrega sozinha quando o pente esvazia.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 60 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/cat.gif" alt="A arte da carta Gato de Merda" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Gato de Merda</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a primeira carta troll: você vira um gato por 10 s. O gato só corre e pula, 30% mais rápido que a sua corrida, e não atira, não usa carta nem escudo, não rola e não dá dash.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Ele é pequeno: os tiros na altura de um player passam por cima, e só acerta quem mira no gato.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 60 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/veil.gif" alt="A arte da carta Véu Fantasma" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure><figure class="foto"><img src="imagens/veu-fantasma-tiros.gif" alt="Com o Véu, os tiros atravessam o player" loading="lazy"><figcaption>Com o Véu, os tiros atravessam o player</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Véu Fantasma</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora, por 6 s, todos os tiros inimigos te atravessam (antes, só os 2 próximos disparos, em até 10 s). Explosões, raios e golpes ainda te acertam.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Enquanto ele dura, o player vira um fantasma roxo, e o corpo se abre por onde a bala passa e se fecha logo depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/ceifador-caca-o-inimigo-perto.gif" alt="O Ceifador voa até o inimigo e o corta" loading="lazy"><figcaption>O Ceifador voa até o inimigo e o corta</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>As criaturas</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">O Ceifador agora caça: voa até qualquer inimigo a até 10 m de você e o corta com a foice, 40 de dano. Antes ele só cortava quem chegasse perto.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A Lacraia e a Tarântula não fogem mais quando estão com pouca vida: lutam até morrer.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/sentinela-barra-e-luzes-de-policia.jpg" alt="A barra de vida e as luzes de polícia" loading="lazy"><figcaption>A barra de vida e as luzes de polícia</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Sentinela</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A Sentinela agora tem uma barra de vida em cima, para todo mundo ver quanto falta para ela quebrar.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">No lugar da luz vermelha girando, ela tem duas luzes de polícia, uma vermelha e uma azul, piscando.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-de-arma">
+<h2>Cartas de arma</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Parede que a Broca atravessa:</strong> <span class="antes">3 m</span><span class="seta">⇒</span><span class="depois">1,5 m</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto">O túnel da Broca não fica mais largo com a Bala Grande.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto">As balas muito grandes ou de muito dano abrem buracos menores no mapa, e a explosão da Bala Explosiva arranca menos dele. O tiro comum quebra igual.</span></li></ul>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Ninguém nasce mais à vista de um inimigo, nem a menos de 8 m dele.</span></li></ul>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/morte-tela-em-quem-te-matou.gif" alt="Morto, a tela vira para quem te matou" loading="lazy"><figcaption>Morto, a tela vira para quem te matou</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Quem te matou</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agora, quando você morre, a tela fica uns 3 s em quem te matou, com um anel vermelho em volta dele, o nome e a distância, para você ver de onde veio o tiro.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Depois disso, assistindo outro player, a tela não fica mais vermelha e embaçada.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/vitoria-dancando-livre.jpg" alt="Os 5 s livres de quem venceu o round" loading="lazy"><figcaption>Os 5 s livres de quem venceu o round</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Fim do round</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agora quem vence o round tem 5 s livres para comemorar antes do próximo (eram 2,4 s): dá para andar, pular, atirar e dançar.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Nesse tempo, quem já morreu assiste a quem venceu.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/esquiva-painel.jpg" alt="As cargas do Q e do E no painel" loading="lazy"><figcaption>As cargas do Q e do E no painel</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Rolamento e dash</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto">O rolamento (<strong>Q</strong>) e o dash (<strong>E</strong>) agora têm 2 cargas cada: cada carga do rolamento volta em 4 s, e cada uma do dash em 3 s.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Eles não gastam mais fôlego: o fôlego agora é só para correr.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">As cargas aparecem no painel, abaixo do escudo, na linha <strong>ESQUIVA</strong>.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">No fim do dash, o corpo não afunda mais no chão, e no começo um pé não pula mais para trás.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/sala-contagem-de-3-segundos.jpg" alt="Todos prontos: a contagem de 3 s" loading="lazy"><figcaption>Todos prontos: a contagem de 3 s</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Pronto na sala</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Na sala, cada player aperta <strong>P</strong> quando estiver pronto.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O anfitrião só começa a partida com todos prontos, e ela começa para todos depois de uma contagem de 3 s.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/portas-na-sebe-por-dentro.jpg" alt="Uma das portas na sebe" loading="lazy"><figcaption>Uma das portas na sebe</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Santuário</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Foram abertas portas na sebe em volta do Santuário: quem cai do lado de fora dela consegue voltar.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">As oliveiras ficaram mais altas: o player não fica mais preso nas folhas.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Modo lite</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o modo lite, uma caixa nas regras da sala: com ele ligado, as cartas que mais quebram o mapa saem do sorteio.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Saem a Bala Explosiva, a Detonação, a Broca, a Bala Grande, o Juntar, a Demolição e o Vazio Roxo.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Duração do Raio da Morte:</strong> <span class="antes">20 s</span><span class="seta">⇒</span><span class="depois">30 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Dano do Raio da Morte:</strong> <span class="antes">40</span><span class="seta">⇒</span><span class="depois">60</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Tempo entre os lasers do Raio da Morte:</strong> <span class="antes">6 s</span><span class="seta">⇒</span><span class="depois">3 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Alcance da Anulação:</strong> <span class="antes">15 m</span><span class="seta">⇒</span><span class="depois">25 m</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Velocidade da Tarântula caçando:</strong> <span class="antes">5,2 m/s</span><span class="seta">⇒</span><span class="depois">6,8 m/s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Duração das Asas:</strong> <span class="antes">15 s</span><span class="seta">⇒</span><span class="depois">10 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Duração da Carapaça:</strong> <span class="antes">15 s</span><span class="seta">⇒</span><span class="depois">5 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Tempo do escudo erguido:</strong> <span class="antes">4 s</span><span class="seta">⇒</span><span class="depois">2 s</span></span></li></ul>
+</section><section class="secao" id="online">
+<h2>Online</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Chat</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado um chat: aperte <strong>/</strong>, escreva e aperte <strong>Enter</strong>, e a mensagem vai para todos da partida, com o nome de cada um na cor dele.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Fechado, ele mostra as últimas 8 mensagens por 10 s; aberto, as últimas 12. Cada mensagem tem até 160 letras.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Na lista de ping, no canto de cima da tela, à direita, quem morreu no round aparece com uma caveira e o nome riscado: dá para ver quem ainda está vivo sem abrir o <strong>Tab</strong>.</span></li></ul>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/minimapa-gira-e-mostra-quem-atira.gif" alt="O minimapa gira com a visão e mostra quem atira" loading="lazy"><figcaption>O minimapa gira com a visão e mostra quem atira</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Minimapa</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado um minimapa no canto de cima da tela, à esquerda. Ele gira com a sua visão e mostra os seus companheiros.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Um inimigo que acaba de atirar aparece nele por 2,5 s, se estiver a até 36 m de você.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Status</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a tecla <strong>I</strong>, que abre uma ficha com os números do seu player como estão agora: a bala, a arma, o corpo e o escudo. Cada número vem ao lado do valor base, em verde quando melhorou e em vermelho quando piorou.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Embaixo de cada número que mudou vem a conta, carta por carta, para você ver no que deu a soma das suas cartas. As porcentagens se multiplicam: duas cartas de +15% dão +32%, não +30%.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/tab-tres-times-de-cinco.jpg" alt="O Tab novo, com três times de cinco" loading="lazy"><figcaption>O Tab novo, com três times de cinco</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Tab</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O <strong>Tab</strong> foi refeito: mais compacto, mostra quantos de cada time ainda estão de pé e cabe na tela mesmo com três times cheios.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A sua linha tem um contorno dourado, e quem já morreu no round fica apagado.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/barras-de-vida-dos-times.jpg" alt="Inimigos em vermelho, companheiro em azul, com a bolinha do time" loading="lazy"><figcaption>Inimigos em vermelho, companheiro em azul, com a bolinha do time</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Barras de vida</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A barra de vida de todo inimigo agora é vermelha, e a dos seus companheiros é azul. Nas partidas de times, uma bolinha da cor do time fica ao lado da barra. Vale também para as criaturas e a Sentinela.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agachado, sua barra de vida e seu nome quase somem para os inimigos.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/luneta-antes-depois.jpg" alt="Em cima, sem a luneta; embaixo, com ela em 10×, o mesmo boneco a 30 m" loading="lazy"><figcaption>Em cima, sem a luneta; embaixo, com ela em 10×, o mesmo boneco a 30 m</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Luneta</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Segurando <strong>Z</strong>, a visão aproxima como uma luneta (4×), para ver de longe. Com ele apertado, a roda do mouse vai de 2× a 10×.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Andar furtivo agora é só no <strong>Caps Lock</strong>.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">As Espadas de Pedra agora se quebram em pedaços quando batem numa parede, no chão ou em alguém.</span></li></ul>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/escudo-cores.gif" alt="O mesmo player com escudos de várias cores" loading="lazy"><figcaption>O mesmo player com escudos de várias cores</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>A cor do escudo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Agora o escudo de cada player tem uma cor própria, sorteada junto com a skin: são milhares de cores possíveis, e a sua é sempre a mesma.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O brilho do escudo e as faíscas quando um tiro bate nele saem na cor dele.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Em notebooks com placa de vídeo integrada de pouca memória, a tela do jogo não fica mais preta.</span></li></ul>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/camera-parede-antes-e-depois.jpg" alt="De costas para a parede: antes, em cima, e agora, embaixo" loading="lazy"><figcaption>De costas para a parede: antes, em cima, e agora, embaixo</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>A câmera na parede</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">A câmera não entra mais na parede: de costas para uma parede ou com o ombro encostado nela, a tela não fica mais preta.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Num canto apertado, a câmera chega perto da cabeça e o player some da tela até ter espaço de novo.</span></li></ul>
+  </div>
+</article>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-12.html"><span>Anterior</span>Espadas de Pedra, Sentinela e Raio da Morte</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
