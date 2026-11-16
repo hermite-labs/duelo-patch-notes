@@ -45,9 +45,14 @@ code { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; background
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--linha);
 }
+.topo-dentro { display: flex; align-items: center; justify-content: space-between; gap: 16px; max-width: var(--largura); margin: 0 auto; padding: 0 16px; }
+.abas { display: flex; gap: 4px; }
+.aba { font-family: Cinzel, Georgia, serif; font-weight: 600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ouro-escuro); padding: 18px 12px 15px; border-bottom: 2px solid transparent; }
+.aba:hover { color: var(--ouro-claro); }
+.aba.ativa { color: var(--ouro-claro); border-bottom-color: var(--ouro); }
 .marca {
   display: flex; align-items: center; gap: 12px;
-  max-width: var(--largura); margin: 0 auto; padding: 14px 16px;
+  padding: 14px 0;
   font-family: Cinzel, Georgia, serif; font-weight: 700; font-size: 18px; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--ouro-claro);
 }
@@ -182,4 +187,50 @@ code { font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; background
   .navegacao { grid-template-columns: 1fr; }
   .nav-versao.velha { grid-column: auto; text-align: left; }
   .marca .sub { display: none; }
+  .marca { font-size: 15px; letter-spacing: 0.08em; }
+  .aba { padding: 16px 8px 13px; font-size: 12.5px; letter-spacing: 0.1em; }
+  .grade { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 18px 12px; }
 }
+
+/* --- a wiki das cartas: cada carta como o jogo a desenha (a imagem já traz o fundo do site, a
+   sombra e o brilho), a arte animada das mágicas por cima, no lugar da arte */
+.na-wiki { float: right; font-size: 12px; letter-spacing: 0.08em; }
+.abertura.larga { max-width: 1180px; }
+.wiki { max-width: 1180px; margin: 0 auto; padding: 0 16px 64px; }
+.wiki-busca { position: sticky; top: 56px; z-index: 5; background: rgba(14, 13, 8, 0.94); backdrop-filter: blur(6px); padding: 12px 0 10px; border-bottom: 1px solid var(--linha); margin-bottom: 18px; }
+.busca { width: 100%; font: inherit; font-size: 17px; color: var(--texto); background: var(--fundo-2); border: 1px solid var(--linha-forte); padding: 10px 14px; outline: none; }
+.busca:focus { border-color: var(--ouro); }
+.filtros-cartas { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.filtro-carta { font: inherit; font-size: 13px; color: var(--texto); background: var(--fundo-2); border: 1px solid var(--linha-forte); padding: 4px 10px; cursor: pointer; }
+.filtro-carta:hover { border-color: var(--ouro-escuro); }
+.filtro-carta[aria-pressed="true"] { background: var(--ouro); color: var(--fundo); border-color: var(--ouro); }
+.contagem { margin: 8px 0 0; font-size: 13px; color: var(--texto-dim); letter-spacing: 0.04em; }
+.wiki-secao h2 { font-size: 24px; margin: 26px 0 14px; }
+.n-secao { font-family: Inter, system-ui, sans-serif; font-size: 14px; color: var(--ouro-escuro); margin-left: 6px; }
+.grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 26px 18px; }
+.wcarta { margin: 0; display: flex; flex-direction: column; align-items: center; scroll-margin-top: 190px; }
+.wcarta[hidden], .wiki-secao[hidden] { display: none; }
+.wcarta-face { position: relative; width: 100%; max-width: 260px; transition: transform 0.18s; cursor: zoom-in; }
+.wcarta-face:hover { transform: translateY(-4px) scale(1.02); }
+.wcarta-img { display: block; width: 100%; height: auto; }
+.wcarta-arte { position: absolute; image-rendering: pixelated; }
+.wcarta figcaption { position: relative; z-index: 1; text-align: center; margin-top: -26px; }
+.wcarta-nome { display: none; }
+.selos { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
+.selo { font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-dim); border: 1px solid var(--linha-forte); padding: 1px 7px; }
+.selo-lendaria { color: #f0a35a; border-color: #f0a35a; }
+.selo-troll { color: #ff5cc4; border-color: #ff5cc4; }
+.selo-incomum { color: #79a6e8; border-color: #5a8ad8; }
+.selo-rara { color: #e07fca; border-color: #d25ab8; }
+.wcarta.pedida .wcarta-face { animation: pedida 1.6s ease-out 2; }
+@keyframes pedida { 0% { filter: drop-shadow(0 0 0 rgba(233, 220, 142, 0)); } 30% { filter: drop-shadow(0 0 16px rgba(233, 220, 142, 0.9)); } 100% { filter: drop-shadow(0 0 0 rgba(233, 220, 142, 0)); } }
+.vazio-cartas { text-align: center; color: var(--texto-dim); padding: 40px 0; }
+
+/* a carta ampliada: sozinha, no meio, sobre o fundo do site (a margem da imagem some nele) */
+.modal-carta { position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center; background: rgba(14, 13, 8, 0.97); cursor: zoom-out; animation: aparece 0.16s ease-out; }
+.modal-carta[hidden] { display: none; }
+.modal-carta .wcarta-face { max-width: none; width: auto; height: min(94vh, calc(96vw / var(--r))); aspect-ratio: var(--r); cursor: zoom-out; }
+.modal-carta .wcarta-face:hover { transform: none; }
+.modal-carta .wcarta-img { width: 100%; height: 100%; }
+body.com-modal { overflow: hidden; }
+@keyframes aparece { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: none; } }

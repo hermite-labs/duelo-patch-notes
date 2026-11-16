@@ -12,7 +12,10 @@
 </head>
 <body>
 <header class="topo">
-  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+  <div class="topo-dentro">
+    <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico</a>
+    <nav class="abas"><a class="aba ativa" href="index.html">Patch notes</a><a class="aba" href="cartas.html">Cartas</a></nav>
+  </div>
 </header>
 
 <section class="heroi" style="--capa: url(imagens/fundicao-visao-geral.jpg); --capa-pos: center 55%">
@@ -43,7 +46,7 @@
 <article class="bloco com-midia">
   <div class="bloco-midia"><figure class="carta">
   <img class="arte" src="imagens/cartas/target.gif" alt="A arte da carta Target" loading="lazy">
-  <figcaption><span class="carta-escola">Carta mágica · Energia</span></figcaption>
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-target">ver a carta</a></figcaption>
 </figure></div>
   <div class="bloco-corpo">
     <h3>Target</h3>
@@ -54,7 +57,7 @@
 <article class="bloco com-midia">
   <div class="bloco-midia"><figure class="carta">
   <img class="arte" src="imagens/cartas/cat.gif" alt="A arte da carta Gato de Merda" loading="lazy">
-  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-cat">ver a carta</a></figcaption>
 </figure></div>
   <div class="bloco-corpo">
     <h3>Gato de Merda</h3>
@@ -65,7 +68,7 @@
 <article class="bloco com-midia">
   <div class="bloco-midia"><figure class="carta">
   <img class="arte" src="imagens/cartas/veil.gif" alt="A arte da carta Véu Fantasma" loading="lazy">
-  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-veil">ver a carta</a></figcaption>
 </figure><figure class="foto"><img src="imagens/veu-fantasma-tiros.gif" alt="Com o Véu, os tiros atravessam o player" loading="lazy"><figcaption>Com o Véu, os tiros atravessam o player</figcaption></figure></div>
   <div class="bloco-corpo">
     <h3>Véu Fantasma</h3>
@@ -228,8 +231,9 @@
   <nav class="navegacao"><a class="nav-versao nova" href="2026-11-15-2.html"><span>Mais nova</span>O chão que cai e sobe e o mapa que fecha</a><a class="nav-versao velha" href="2026-11-12.html"><span>Anterior</span>Espadas de Pedra, Sentinela e Raio da Morte</a></nav>
 </main>
 <footer class="rodape">
-  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+  <p>Duelo Clássico · patch notes e cartas · as versões chegam sozinhas pelo launcher</p>
 </footer>
 <script src="filtro.js"></script>
+<script src="cartas.js"></script>
 </body>
 </html>
