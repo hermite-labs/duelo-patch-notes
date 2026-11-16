@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 15 de novembro de 2026 · O chão que cai e sobe e o mapa que fecha · Duelo Clássico</title>
+<meta name="description" content="No Santuário e na Fundição, o chão agora treme: de tempos em tempos, pedaços dele caem nas nuvens ou sobem como pilares, e a partir de 30 s de luta o mapa fecha pelas beiradas até sobrar só o meio. Ch">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico<span class="sub">Patch notes</span></a>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/santuario-fecha.jpg); --capa-pos: center 60%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 15 de novembro de 2026</p>
+    <h1>O chão que cai e sobe e o mapa que fecha</h1>
+    <p class="versao">Versão 2026-11-15-2 · <span class="commit">f25c41967</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>No Santuário e na Fundição, o chão agora treme: de tempos em tempos, pedaços dele caem nas nuvens ou sobem como pilares, e a partir de 30 s de luta o mapa fecha pelas beiradas até sobrar só o meio. Chegaram duas cartas mágicas, a Visão do Caçador e o Por um Fio, e o Vazio Roxo agora mostra os inimigos atrás das paredes. Quando você leva um golpe, um arco vermelho em volta da mira mostra de onde ele veio. Quem não é o anfitrião espera a partida andando no lobby e entra nela pelo <strong>H</strong>, e o chat avisa quem entrou e quem saiu.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">15</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">2</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">6</span></button><button class="filtro" data-filtro="desempenho" aria-pressed="false">Desempenho<span class="n">1</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#online">Online</a></li><li><a href="#interface">Interface</a></li><li><a href="#desempenho">Desempenho</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/santuario-chao-cai.jpg" alt="No tremor de queda, o chão do Santuário abre até as nuvens" loading="lazy"><figcaption>No tremor de queda, o chão do Santuário abre até as nuvens</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>O chão que cai e sobe</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">No Santuário e na Fundição, o chão é dividido em quadrados que ninguém vê. O primeiro tremor vem 15 s depois do começo de cada round, e depois vem um a cada 22 s, alternando os dois tipos.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Na queda, um quarto dos quadrados treme por 3 s e cai nas nuvens, mais rápido do que você cai: quem fica em cima morre, mas um pulo bem na hora ainda pode salvar. Eles voltam subindo das nuvens 12 s depois do começo do tremor.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Na subida, um quinto dos quadrados treme por 1,2 s e sobe 1 m, 1,6 m ou 2,2 m, levando quem estiver em cima. Eles ficam 12 s lá em cima e descem.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">No Santuário, os quadrados ficam no chão do recinto, dentro dos muros. Na Fundição, no pátio: os galpões, o piso do forno e o fosso não se mexem. Os lugares onde se nasce nunca se mexem.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O que está em cima vai junto: na Fundição, os trilhos, as caçambas e os lingotes; no Santuário, os braseiros. Os corações de vida não aparecem no chão que se mexe.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/santuario-so-o-meio.jpg" alt="No fim, só o meio do Santuário fica de pé" loading="lazy"><figcaption>No fim, só o meio do Santuário fica de pé</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>O mapa que fecha</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A partir de 30 s de luta, o mapa fecha: as beiradas tremem por 3 s e caem nas nuvens, numa onda que vem de fora para dentro. Vem um estágio a cada 16 s, e no último sobra só o meio, de 12,8 m de lado.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Tudo o que está fora do meio cai: o chão, os muros, os prédios e o que há neles. Ninguém se esconde num galpão nem atrás de um muro.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">3 s antes de cada estágio, um aviso no meio da tela manda ir para o meio. No minimapa, o que caiu fica escuro, o que está caindo fica vermelho, e um círculo branco mostra até onde vai o próximo estágio.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A cada round, o mapa volta inteiro. Os bots também fogem do chão que vai cair e entram para o meio antes do fechamento.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/sight.gif" alt="A arte da carta Visão do Caçador" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Visão do Caçador</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que, por 15 s, te deixa ver através das paredes os inimigos que estão escondidos de você.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 45 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/thread.gif" alt="A arte da carta Por um Fio" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo <span class="lendaria">Lendária</span></span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Por um Fio</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta lendária: na hora, todo player vivo fica com 1 de vida, os seus inimigos, os seus aliados e você também. Todo mundo vê na tela quem usou.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta 90 s depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/void.gif" alt="A arte da carta Vazio Roxo" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Vazio Roxo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora, enquanto você segura a bola, a cada 5 s você vê por um instante os inimigos escondidos atrás das paredes.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto"><strong>Chão que cai e sobe</strong> e <strong>O mapa fecha</strong> são regras novas, ligadas por padrão. O anfitrião pode desligar cada uma nas regras da sala, que as mostram quando o mapa é a Fundição ou o Santuário.</span></li></ul>
+</section><section class="secao" id="online">
+<h2>Online</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quem não é o anfitrião agora começa o jogo andando no lobby, com a arma da sala: dá para correr, pular, atirar e treinar as esquivas enquanto espera.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O <strong>H</strong> abre uma telinha que leva à tela de entrar na partida do anfitrião. Quando a sala dele abre, um aviso aparece na tela.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O anfitrião pode silenciar um player no chat pelo <strong>Tab</strong>: o que ele escreve não aparece para ninguém, e um balão riscado fica ao lado do nome dele. Pelo <strong>Tab</strong>, o anfitrião também pode expulsar alguém da sala.</span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/dano-de-onde-veio.jpg" alt="O tiro veio da frente, pela direita" loading="lazy"><figcaption>O tiro veio da frente, pela direita</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>De onde veio o dano</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Quando você leva um golpe, aparece por um instante um arco vermelho em volta da mira, do lado de onde ele veio: em cima é pela frente, embaixo é por trás. O arco acompanha a câmera quando você vira.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Uma queda, o veneno e os ratos não têm lado, e deixam só a tela avermelhada, como antes.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O chat agora avisa quem entrou e quem saiu da sala.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Com o <strong>Tab</strong> segurado, o botão direito solta o mouse: passe ele nas cartas de cada um para ver o que elas fazem.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto"><strong>Distância da câmera:</strong> <span class="antes">1,6 m</span><span class="seta">⇒</span><span class="depois">2,1 m</span></span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="desempenho">
+<h2>Desempenho</h2>
+<ul class="itens soltos"><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">Nas placas de vídeo sem ray tracing, o chão que se mexe não pesa: o Santuário e a Fundição custam o mesmo que com o chão parado.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-14.html"><span>Anterior</span>Fundição abandonada, minimapa e o Gato de Merda</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+</body>
+</html>
