@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 16 de novembro de 2026 · Novas cartas mágicas, experimentando conceitos novos e reformulação do modelo de porcentagem das cartas · Duelo Clássico</title>
+<meta name="description" content="As porcentagens das cartas agora se somam em vez de se multiplicar, e as combinações não disparam mais. Chegaram uma carta mágica, Aquele que Lê a Lua, que puxa o inimigo para você e mostra tudo em ma">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-dentro">
+    <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico</a>
+    <nav class="abas"><a class="aba ativa" href="index.html">Patch notes</a><a class="aba" href="cartas.html">Cartas</a></nav>
+  </div>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/armadura-de-placas.jpg); --capa-pos: center 45%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 16 de novembro de 2026</p>
+    <h1>Novas cartas mágicas, experimentando conceitos novos e reformulação do modelo de porcentagem das cartas</h1>
+    <p class="versao">Versão 2026-11-16-3 · <span class="commit">ee02a8d1e</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>As porcentagens das cartas agora se somam em vez de se multiplicar, e as combinações não disparam mais. Chegaram uma carta mágica, Aquele que Lê a Lua, que puxa o inimigo para você e mostra tudo em mapa de calor, e sete cartas de arma: a Armadura de Placas, que segura os tiros e se despedaça; o Grandão e o Nanico, que deixam o player maior ou menor; o Dash no Ar; e três cartas que fecham o espalhamento dos tiros. A Disparada e o Poço Gravitacional ficaram mais fortes, o Por um Fio agora dura 10 s e a Anulação desfaz bem mais coisas. O mapa só fecha quando sobram 2 players, o templo do Santuário ganhou uma segunda escada, o seu escudo segura a sua própria bala e as cartas de pulo não te machucam mais na queda. E ninguém mais cai ao entrar numa sala com o chão que cai e sobe ou o mapa que fecha ligados.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">14</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">8</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">11</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">3</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">4</span></button><button class="filtro" data-filtro="desempenho" aria-pressed="false">Desempenho<span class="n">1</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#cartas-de-arma">Cartas de arma</a></li><li><a href="#partida">Partida</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#desempenho">Desempenho</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>As porcentagens das cartas se somam</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">As porcentagens das cartas agora se somam, em vez de se multiplicar: duas cartas de <strong>+100% de dano</strong> dão 3x o dano, não 4x. Na recarga e no tempo entre os tiros, as cartas somam velocidade.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O que uma carta tira continua multiplicando: duas cartas de <strong>−50% de vida</strong> deixam um quarto da vida, nunca zero.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Uma carta sozinha faz o mesmo de antes. Só as combinações mudam, como estas:</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Dano de Canhão de Vidro, Planejamento, Juntar e Bala Grande juntos:</strong> <span class="antes">11,5x</span><span class="seta">⇒</span><span class="depois">4,65x</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Vida de dois Tanques e um Defensor:</strong> <span class="antes">5,2x</span><span class="seta">⇒</span><span class="depois">3,3x</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Recarga com duas Recargas Rápidas:</strong> <span class="antes">8,2x mais rápida</span><span class="seta">⇒</span><span class="depois">4,7x mais rápida</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Armadura de Placas</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta de arma que te dá um capacete, um peitoral e placas nas pernas. Cada peça segura inteiro o golpe que pega nela até quebrar, e o que passa vai para a sua vida.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Com a vida padrão de 200, o capacete aguenta <strong>30</strong>, o peitoral <strong>60</strong> e as placas das pernas <strong>30</strong>. Cada golpe abre um buraco na peça, e quando ela quebra se despedaça.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Ela não segura queda, veneno nem a esfera do Vazio Roxo, e deixa o player <strong>7%</strong> mais lento. Cada cópia a mais deixa a armadura mais forte, e ela volta inteira a cada round.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>O mapa só fecha quando sobram 2</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O mapa agora só começa a fechar quando sobram <strong>2</strong> players vivos, contando todos os times. Se nunca sobrarem 2, ele fecha aos <strong>6 min</strong> de luta.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Nunca fecha antes de <strong>30 s</strong> de luta: num 1 contra 1, ele continua fechando aos 30 s, como antes.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Quando sobram 2, o aviso na tela e o anel no minimapa aparecem, e as beiradas começam a cair <strong>10 s</strong> depois.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/thread.gif" alt="A arte da carta Por um Fio" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo <span class="lendaria">Lendária</span></span><a class="na-wiki" href="cartas.html#magica-thread">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Por um Fio</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agora dura <strong>10 s</strong>: todo mundo fica com 1 de vida, e nada cura nesse tempo, nem a regeneração, o roubo de vida, a Seiva, a Fadinha, a Cura ou os corações do mapa.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">No fim, cada um volta à vida que tinha antes. Enquanto ele dura, a borda da tela fica vermelha.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/dispel.gif" alt="A arte da carta Anulação" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-dispel">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Anulação</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Agora desfaz as cartas do inimigo que pegam o mapa todo, como o Por um Fio e a Câmera Lenta, de onde ele estiver.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">Dentro dos seus <strong>25 m</strong>, desfaz a esfera do Vazio Roxo do inimigo, juntando ou voando, sem ela ser jogada, e as Espadas de Pedra que estão no ar.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/moon.gif" alt="A arte da carta Aquele que Lê a Lua" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-moon">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Aquele que Lê a Lua</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que, por <strong>8 s</strong>, te envolve numa bolha de <strong>5 m</strong>: o inimigo que entra nela é puxado para você e perde <strong>6</strong> de vida por segundo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Dentro da bolha, tudo se vê em mapa de calor.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta <strong>1 min</strong> depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/rush.gif" alt="A arte da carta Disparada" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-rush">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Disparada</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Duração:</strong> <span class="antes">5 s</span><span class="seta">⇒</span><span class="depois">6 s</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Velocidade da corrida:</strong> <span class="antes">+40%</span><span class="seta">⇒</span><span class="depois">+60%</span></span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Enquanto ela dura, saem raiozinhos azuis dos seus pés, mais quanto mais rápido você corre.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/well.gif" alt="A arte da carta Poço Gravitacional" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-well">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Poço Gravitacional</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Distância em que as balas despencam:</strong> <span class="antes">1,6 m</span><span class="seta">⇒</span><span class="depois">2,2 m</span></span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Enquanto ele dura, o ar em volta do player entorta, puxado para ele. Em volta da sua mira nada entorta, para você não errar o tiro.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-de-arma">
+<h2>Cartas de arma</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o <strong>Dash no Ar</strong>, uma carta que deixa dar o dash (<strong>E</strong>) no ar, uma vez até você pisar no chão de novo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a <strong>Mira Firme</strong>, uma carta que deixa os seus tiros com metade do espalhamento e a bala <strong>10%</strong> mais rápida.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o <strong>Cano Longo</strong>, uma carta que deixa os tiros mais juntos (<strong>40%</strong> menos espalhamento), a bala <strong>30%</strong> mais rápida e <strong>25%</strong> mais longe, e a arma atira um pouco mais devagar.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionado o <strong>Choke</strong>, uma carta que deixa os chumbos mais juntos (<strong>45%</strong> menos espalhamento) e indo <strong>30%</strong> mais longe. Feita para o Chumbo Grosso.</span></li></ul>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Grandão e Nanico</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que deixa o player <strong>30%</strong> maior, com <strong>60%</strong> mais vida e <strong>10%</strong> mais lento: o <strong>Grandão</strong>.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que deixa o player <strong>25%</strong> menor, com <strong>30%</strong> menos vida e <strong>10%</strong> mais rápido: o <strong>Nanico</strong>.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O tamanho muda onde os tiros te pegam: maior, você é um alvo maior; menor, um tiro na altura do peito de um player normal passa por cima de você. O escudo cresce ou diminui junto.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O seu escudo agora segura a sua própria bala quando ela volta quicando para você. O tiro novo continua saindo normalmente.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Com as cartas de pulo, os seus próprios pulos não te machucam mais na queda: só conta a altura que passa do seu pulo mais alto. Com 3 Molas e o Pulo Duplo, pousar do próprio pulo tirava <strong>54</strong> de vida e agora não tira nada; pular de um telhado de 4 m tirava <strong>91</strong> e agora tira <strong>16</strong>, o mesmo de quem não tem carta de pulo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O templo do Santuário ganhou uma segunda escada até o telhado, por dentro, junto da porta. Agora dá para subir pelos dois lados, e quem está lá em cima não guarda o único caminho.</span></li></ul>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Uma opção nova, ligada de começo, deixa as porcentagens das cartas se somarem. Desligada, as cartas se multiplicam como antes.</span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O corpo do player agora se despedaça aos poucos com o dano: sai um pedaço a cada décimo da vida, com rachaduras escuras, e nenhum braço ou perna cai.</span></li></ul>
+</section><section class="secao" id="desempenho">
+<h2>Desempenho</h2>
+<ul class="itens soltos"><li class="item" data-filtro="desempenho"><span class="tag tag-desempenho">Desempenho</span><span class="texto">O jogo travava uns 10 s ao mostrar o mapa com o chão que se mexe. Agora leva menos de meio segundo.</span></li></ul>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Com o chão que cai e sobe ou o mapa que fecha ligados, quem entrava numa sala entrava e saía na hora, e quando o anfitrião começava a partida nesses mapas caíam todos e só ele ficava. Agora todo mundo entra e fica.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">A conexão agora espera 15 s antes de desistir, para um PC mais lento carregar o mapa sem cair da sala.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">O gato do Gato de Merda podia ficar parado no ar no mapa depois de um round novo.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Quando outro player trocava de visual, pedaços do visual antigo podiam ficar parados onde ele estava.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-15-2.html"><span>Anterior</span>O chão que cai e sobe e o mapa que fecha</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes e cartas · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+<script src="cartas.js"></script>
+</body>
+</html>
