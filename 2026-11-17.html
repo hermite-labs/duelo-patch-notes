@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 17 de novembro de 2026 · Capacetes, Rede, Ressurreição e Mortos-Vivos · Duelo Clássico</title>
+<meta name="description" content="Cada player agora tem um capacete só seu, e um inventário na tecla V para tirar, pôr ou sortear outro. Chegaram três cartas mágicas: a Rede, que leva um inimigo para uma esteira cheia de obstáculos en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-dentro">
+    <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico</a>
+    <nav class="abas"><a class="aba ativa" href="index.html">Patch notes</a><a class="aba" href="cartas.html">Cartas</a></nav>
+  </div>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/mortos-vivos-capa.jpg); --capa-pos: center 60%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 17 de novembro de 2026</p>
+    <h1>Capacetes, Rede, Ressurreição e Mortos-Vivos</h1>
+    <p class="versao">Versão 2026-11-17 · <span class="commit">1fd4eb232</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Cada player agora tem um capacete só seu, e um inventário na tecla V para tirar, pôr ou sortear outro. Chegaram três cartas mágicas: a Rede, que leva um inimigo para uma esteira cheia de obstáculos enquanto você atira nele de cima; a Ressurreição, que traz um companheiro de volta; e a Mortos-Vivos, que levanta quem morreu como um zumbi do seu lado. Também chegou a carta de arma Grimório, que te dá uma quarta carta mágica. Depois de cada carta de arma agora vem só 1 carta mágica sorteada. O Raio sai da mão direita, com a arma na esquerda, o tiro do Raio da Morte voa até o alvo, a bolha de Aquele que Lê a Lua virou o mundo branco, e os bichos e a Sentinela ficam mais fortes a cada round. Quem morre de queda vê o próprio corpo se espatifar, e o player sobe a escada direito.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">16</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">1</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">6</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">6</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">3</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#cartas-de-arma">Cartas de arma</a></li><li><a href="#partida">Partida</a></li><li><a href="#regras-da-casa">Regras da casa</a></li><li><a href="#balanceamento">Balanceamento</a></li><li><a href="#visual-e-som">Visual e som</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Capacetes</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Agora cada player tem um capacete gerado a partir do seu visual: são milhares de combinações, do elmo fechado ao chapéu, e ninguém tem um igual.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Os tiros abrem buracos nele, e ele se despedaça; volta inteiro quando você renasce. Com a Armadura de Placas, o capacete dela fica no lugar dele enquanto dura.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Inventário</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A tecla <strong>V</strong> abre o inventário, um painel ao lado do player: clique ou arraste para tirar ou pôr o capacete.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Dá para sortear outro capacete até <strong>3</strong> vezes. Antes de cada sorteio aparece um aviso: o capacete que você está usando se perde para sempre.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/net.gif" alt="A arte da carta Rede" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-net">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Rede</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que atira uma rede até <strong>30 m</strong>. O primeiro inimigo que ela pega vai com você para uma esteira longe do mapa.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Por <strong>15 s</strong>, ele corre na esteira desviando dos obstáculos (pular, abaixar ou passar pela brecha), sem poder atirar, enquanto você atira nele de cima.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Se ele cair da esteira, morre. Se sobreviver, ganha <strong>+200</strong> de vida neste round, e você perde <strong>100</strong>. Depois os dois voltam para onde estavam.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A carta volta <strong>40 s</strong> depois.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/revive.gif" alt="A arte da carta Ressurreição" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Gelo</span><a class="na-wiki" href="cartas.html#magica-revive">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Ressurreição</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta passiva, só no modo times, que traz um companheiro de volta: vá até os destroços dele, segure <strong>R</strong> por <strong>5 s</strong>, agachado, e ele levanta ali com metade da vida e a arma cheia.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Dá para erguer o escudo enquanto segura o <strong>R</strong>. Funciona uma vez por round.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/undead.gif" alt="A arte da carta Mortos-Vivos" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span><a class="na-wiki" href="cartas.html#magica-undead">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Mortos-Vivos</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta passiva, só no modo times, que levanta quem morreu como um zumbi do seu lado. Um R aparece sobre os restos de cada player caído, de qualquer time: chegue perto e aperte <strong>R</strong>.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O zumbi não atira: ele corre atrás dos seus inimigos e ataca com as garras (<strong>18</strong> de dano) e com um bote (<strong>26</strong>). Ele corre um pouco mais devagar que um player.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Não tem limite: dá para levantar todos os que caírem, cada corpo uma vez. Os zumbis caem quando você morre ou quando o round acaba.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Com a Ressurreição também na mão, os seus companheiros caídos ficam para ela, e só os inimigos viram zumbi.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/moon.gif" alt="A arte da carta Aquele que Lê a Lua" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-moon">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Aquele que Lê a Lua</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Dentro da bolha agora é o mundo branco, no lugar do mapa de calor: de dentro, só se vê quem está nela.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">De fora, a bolha é uma cúpula branca: não dá para ver quem está dentro, nem o nome dele.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A cada vez que a bolha drena o inimigo, pedacinhos do corpo dele voam até você.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/lightning.gif" alt="A arte da carta Raio" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-lightning">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Raio</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Agora, por <strong>10 s</strong>, a mão direita lança os raios no botão direito, e a arma vai para a mão esquerda e continua atirando no botão esquerdo: frite o inimigo com um raio e termine com a arma.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Enquanto ele dura, não dá para usar o escudo. Os números não mudaram: <strong>3</strong> raios seguidos, cada um volta em <strong>2 s</strong>, <strong>30</strong> de dano e <strong>1,2 s</strong> de fritado.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">A munição da arma volta a aparecer na tela com o Raio, com os raios por cima.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/deathray.gif" alt="A arte da carta Raio da Morte" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-deathray">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Raio da Morte</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O tiro agora voa até o alvo a <strong>40 m/s</strong> e só dá dano quando chega. Ele segue o inimigo, e uma parede que entre no caminho segura o tiro.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Agora dá para ver o tiro voando, vermelho, e onde ele acerta o corpo fica uma chama por alguns segundos.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-de-arma">
+<h2>Cartas de arma</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta de arma rara, o <strong>Grimório</strong>, que te dá mais um espaço de carta mágica: sua mão vai até <strong>4</strong> magias, e a quarta sai na tecla <strong>4</strong>. Ela só pode ser pega uma vez.</span></li></ul>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Depois de cada carta de arma, agora vem <strong>1</strong> carta mágica sorteada, em vez de você escolher 1 entre 3: ela entra na sua mão. Com a mão cheia, você escolhe qual das suas sai, ou fica com as suas.</span></li></ul>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Morte por queda</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Quem morre de queda, fora do mapa ou com a própria explosão não pula mais na hora para a visão de outro player: a câmera desce até o seu corpo e fica nele por <strong>5 s</strong>, antes de ir para os outros.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Morrendo de queda, o corpo se espatifa no chão em vez de explodir, mais espalhado quanto mais alta a queda, com um anel de poeira do chão e um baque.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="regras-da-casa">
+<h2>Regras da casa</h2>
+<ul class="itens soltos"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">A opção <strong>Magias na escolha</strong> deixa o anfitrião voltar ao jeito antigo: escolher 1 entre 3 cartas mágicas.</span></li></ul>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">O Ceifador, a Lacraia, a Tarântula e a Sentinela ganham <strong>+100</strong> de vida a cada round já jogado: no 1º round, a vida de sempre; no 5º, <strong>+400</strong>.</span></li></ul>
+</section><section class="secao" id="visual-e-som">
+<h2>Visual e som</h2>
+<ul class="itens soltos"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">No modo times, a bala de um companheiro agora abre um buraco no seu corpo por onde passa, e ele se fecha logo atrás.</span></li></ul>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Caindo muito rápido, o corpo do player era desenhado metros acima de onde estava, e não se via ele batendo no chão.</span></li></ul>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/escada-antes-e-depois.jpg" alt="Subindo a escada, antes e depois" loading="lazy"><figcaption>Subindo a escada, antes e depois</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>A escada</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">O player agora sobe a escada direito. Antes ele subia colado nela, com os joelhos dobrando para trás e a pistola em cima do degrau; agora sobe um pé e a mão oposta de cada vez, com a pistola no coldre.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Parado na escada, ele fica de pé num degrau. Atirando, uma mão solta o degrau para mirar, e recarregando, as duas soltam.</span></li></ul>
+  </div>
+</article>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-16-3.html"><span>Anterior</span>Novas cartas mágicas, experimentando conceitos novos e reformulação do modelo de porcentagem das cartas</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes e cartas · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+<script src="cartas.js"></script>
+</body>
+</html>
