@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patch notes 20 de novembro de 2026 · Seis cartas mágicas, dano de impacto e teclas à sua escolha · Duelo Clássico</title>
+<meta name="description" content="Chegaram seis cartas mágicas: o Mago Negro, o Camaleão, as Mini Gárgulas, o Triângulo Obliterador, a Capa da Invisibilidade e a Bolha do Tempo. Entre as cartas de arma vieram a Bala de Gelo, a Mata-Mo">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="topo">
+  <div class="topo-dentro">
+    <a class="marca" href="index.html"><span class="losango"></span>Duelo Clássico</a>
+    <nav class="abas"><a class="aba ativa" href="index.html">Patch notes</a><a class="aba" href="cartas.html">Cartas</a></nav>
+  </div>
+</header>
+
+<section class="heroi" style="--capa: url(imagens/gargulas-capa.jpg); --capa-pos: center 45%">
+  <div class="heroi-dentro">
+    <p class="sobre">Patch notes · 20 de novembro de 2026</p>
+    <h1>Seis cartas mágicas, dano de impacto e teclas à sua escolha</h1>
+    <p class="versao">Versão 2026-11-20 · <span class="commit">8234a66f2</span></p>
+  </div>
+</section>
+<main class="versao-pagina">
+  <div class="resumo"><p>Chegaram seis cartas mágicas: o Mago Negro, o Camaleão, as Mini Gárgulas, o Triângulo Obliterador, a Capa da Invisibilidade e a Bolha do Tempo. Entre as cartas de arma vieram a Bala de Gelo, a Mata-Monstros e as duas primeiras lendárias, o Exterminador e o Antídoto. Agora quem é arremessado contra uma parede toma dano e fica preso nela por um instante, e a Fênix despedaça o player e junta os pedaços de novo. Você pode trocar qualquer tecla do jogo no menu. A Lacraia e a Tarântula ficaram menores, o escudo aguenta mais e várias cartas tiveram os números mexidos.</p></div>
+  <nav class="painel">
+    <div class="filtros" role="group" aria-label="Filtrar por tag"><span class="rotulo">Filtrar</span><button class="filtro" data-filtro="novo" aria-pressed="false">Novo<span class="n">26</span></button><button class="filtro" data-filtro="balanceamento" aria-pressed="false">Balanceamento<span class="n">18</span></button><button class="filtro" data-filtro="jogabilidade" aria-pressed="false">Jogabilidade<span class="n">7</span></button><button class="filtro" data-filtro="visual" aria-pressed="false">Visual e som<span class="n">6</span></button><button class="filtro" data-filtro="correcao" aria-pressed="false">Correção<span class="n">5</span></button><button class="limpar" hidden>Mostrar tudo</button></div>
+    <ol class="indice"><li><a href="#destaques">Destaques</a></li><li><a href="#cartas-magicas">Cartas mágicas</a></li><li><a href="#cartas-de-arma">Cartas de arma</a></li><li><a href="#partida">Partida</a></li><li><a href="#balanceamento">Balanceamento</a></li><li><a href="#interface">Interface</a></li><li><a href="#correcoes">Correções</a></li></ol>
+  </nav>
+  <section class="secao" id="destaques">
+<h2>Destaques</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/impacto-contra-a-parede.gif" alt="Arremessado contra a parede: a batida, o player preso e escorregando" loading="lazy"><figcaption>Arremessado contra a parede: a batida, o player preso e escorregando</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Dano de impacto</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Agora quem é arremessado contra uma parede, um pilar ou o teto toma dano pela força da batida. Batendo a até <strong>6 m/s</strong> não machuca; acima disso, são <strong>6</strong> de dano para cada m/s a mais (uma batida a 14 m/s tira <strong>48</strong>).</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Vale para qualquer empurrão: bala, explosão, marreta, espada, Ceifador, Espadas de Pedra e monstros. O dano conta para quem te empurrou, e a armadura não segura.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Depois de uma batida forte, você fica preso na parede de <strong>0,25 s</strong> a <strong>0,8 s</strong>, sem atirar.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">O empurrão de um companheiro não machuca pela parede, nem o seu próprio movimento (correr, dash ou voar). O Gancho também não: ele puxa.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Arremessado, o player fica mole como um boneco de pano. Preso, fica apertado contra a parede e depois escorrega. A batida tem som, poeira e tremor na tela.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/teclas-aba.jpg" alt="A aba Teclas, nas configurações" loading="lazy"><figcaption>A aba Teclas, nas configurações</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Teclas à sua escolha</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a aba <strong>Teclas</strong> no menu (<strong>Esc</strong>, Configurações): você troca qualquer tecla do jogo por outra, ou por um botão do mouse. São <strong>27</strong> ações, cada uma com até duas teclas.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Se a tecla escolhida já era de outra ação, as duas trocam de lugar, e o menu avisa o que mudou. O botão <strong>Restaurar o padrão</strong> volta tudo como era.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A tela mostra as suas teclas: no painel, na ajuda, nos avisos e nos textos das cartas.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Ficam fixos o <strong>Esc</strong>, a <strong>/</strong> do chat, o <strong>Enter</strong>, o <strong>Alt</strong> e as teclas <strong>F</strong>. Os botões do controle também não mudam.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-magicas">
+<h2>Cartas mágicas</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/mage.gif" alt="A arte da carta Mago Negro" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-mage">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Mago Negro</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que invoca um Mago Negro: ele flutua ao seu lado por <strong>30 s</strong> e lança setas arcanas de <strong>24</strong> de dano nos inimigos à vista, até <strong>26 m</strong>, uma a cada 2 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Os tiros dos inimigos o derrubam. Ele também cai se você morrer, ou se um inimigo usar a Anulação a até 25 m dele. A carta volta <strong>30 s</strong> depois que ele some.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/chameleon.gif" alt="A arte da carta Camaleão" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Veneno</span><a class="na-wiki" href="cartas.html#magica-chameleon">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Camaleão</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que invoca um camaleão gigante onde você mira. Por <strong>60 s</strong> ele caça seus inimigos pelo chão, pelas paredes e pelo teto, pintado das cores de onde está: quase não se vê.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">De até <strong>7 m</strong>, ele dá uma linguada de <strong>25</strong> de dano que puxa o inimigo para perto. Antes de atacar, ele aparece e abre a boca por meio segundo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Um tiro o revela por um instante. Apertar a tecla da carta de novo manda ele ficar te guardando. A carta volta <strong>30 s</strong> depois que ele some.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/gargoyles.gif" alt="A arte da carta Mini Gárgulas" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-gargoyles">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Mini Gárgulas</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que ergue um portão de pedra à sua frente, de onde saem <strong>10</strong> mini gárgulas. Por até <strong>30 s</strong> elas voam atrás dos seus inimigos, rodeiam a cabeça deles e mergulham para arranhar: <strong>4</strong> de dano por golpe.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Qualquer tiro mata uma, e os seus tiros passam por elas. A carta volta <strong>1 min 20 s</strong> depois que acaba.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/triangle.gif" alt="A arte da carta Triângulo Obliterador" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-triangle">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Triângulo Obliterador</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que te faz subir uns <strong>25 m</strong> e pairar por <strong>10 s</strong>, olhando para baixo, com a mira em forma de triângulo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Cada clique carrega por <strong>0,5 s</strong> e solta um triângulo de energia que corta nesse formato o que atravessa (paredes, tetos e chão, até <strong>3 m</strong> de espessura) e tira <strong>100</strong> de vida de quem estiver dentro. São <strong>3</strong> disparos.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">No ar você não usa o escudo. Depois você desce sem dano de queda, e a carta volta <strong>45 s</strong> depois que acaba.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/cloak.gif" alt="A arte da carta Capa da Invisibilidade" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-cloak">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Capa da Invisibilidade</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que te veste com a capa da invisibilidade: enquanto a carta é sua, você anda de capa, e todos veem.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Ativada, por <strong>12 s</strong> a capa fica invisível e esconde o que ela tampa de quem olha. O que ela não cobre continua à vista, como a cabeça, os pés e a mão com a arma.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Com a capa invisível você anda <strong>20%</strong> mais devagar, e os inimigos deixam de ver o seu nome e a sua vida. Atirar ou levar dano te mostra por <strong>0,8 s</strong>. A carta volta <strong>40 s</strong> depois que acaba.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/bubble.gif" alt="A arte da carta Bolha do Tempo" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Gelo</span><a class="na-wiki" href="cartas.html#magica-bubble">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Bolha do Tempo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta que cria uma bolha de <strong>6 m</strong> em volta de você por <strong>8 s</strong>. Os inimigos dentro dela andam a <strong>40%</strong> da velocidade, e as balas deles a <strong>20%</strong>.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Em troca, enquanto a bolha dura a sua arma atira a bala básica, com <strong>10</strong> de dano. A carta volta <strong>45 s</strong> depois que acaba.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/moon.gif" alt="A arte da carta Aquele que Lê a Lua" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio</span><a class="na-wiki" href="cartas.html#magica-moon">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Aquele que Lê a Lua</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto">A vida que a bolha tira dos inimigos agora vai para você.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Puxão para dentro da bolha:</strong> <span class="antes">2,5 m/s</span><span class="seta">⇒</span><span class="depois">3,5 m/s</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Lacraia e Tarântula</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto">As duas voltaram ao tamanho de antes, e a mordida diminuiu junto.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Comprimento da Lacraia:</strong> <span class="antes">9,5 m</span><span class="seta">⇒</span><span class="depois">6,3 m</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Tarântula, de pata a pata:</strong> <span class="antes">3,6 m</span><span class="seta">⇒</span><span class="depois">2,4 m</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Mordida da Lacraia:</strong> <span class="antes">53</span><span class="seta">⇒</span><span class="depois">45</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Mordida da Tarântula:</strong> <span class="antes">65</span><span class="seta">⇒</span><span class="depois">55</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Vida da Lacraia:</strong> <span class="antes">600</span><span class="seta">⇒</span><span class="depois">500</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Vida da Tarântula:</strong> <span class="antes">750</span><span class="seta">⇒</span><span class="depois">650</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Vida a mais por round:</strong> <span class="antes">+10</span><span class="seta">⇒</span><span class="depois">+5</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto">As cartas de arma que aumentam as duas crescem menos, e juntas deixam a criatura no máximo <strong>50%</strong> maior.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Tamanho com a Gigante:</strong> <span class="antes">+35%</span><span class="seta">⇒</span><span class="depois">+15%</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Tamanho com a Rainha:</strong> <span class="antes">+60%</span><span class="seta">⇒</span><span class="depois">+30%</span></span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/reaper.gif" alt="A arte da carta O Ceifador" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Vazio <span class="lendaria">Lendária</span></span><a class="na-wiki" href="cartas.html#magica-reaper">ver a carta</a></figcaption>
+</figure><figure class="foto"><img src="imagens/ceifador-visto-atraves.gif" alt="O Ceifador fica transparente ao passar na frente do dono" loading="lazy"><figcaption>O Ceifador fica transparente ao passar na frente do dono</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Ceifador</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">Quando ele passa na frente da sua vista, ou da de alguém do seu time, fica transparente para não tapar o que você vê. Os inimigos sempre o veem inteiro.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/deathray.gif" alt="A arte da carta Raio da Morte" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-deathray">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Raio da Morte</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O fogo que fica no corpo de quem leva o tiro ficou bem menor.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O braço do raio agora fica no ombro esquerdo.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/dispel.gif" alt="A arte da carta Anulação" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Energia</span><a class="na-wiki" href="cartas.html#magica-dispel">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Anulação</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Quando alguém usa, todos veem no meio da tela quem lançou.</span></li></ul>
+  </div>
+</article>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="carta">
+  <img class="arte" src="imagens/cartas/alquimista.gif" alt="A arte da carta Alquimista de Fogo" loading="lazy">
+  <figcaption><span class="carta-escola">Carta mágica · Fogo <span class="lendaria">Lendária</span></span><a class="na-wiki" href="cartas.html#magica-alquimista">ver a carta</a></figcaption>
+</figure></div>
+  <div class="bloco-corpo">
+    <h3>Alquimista de Fogo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O raio do estalo agora é sempre um só, mesmo de longe. Antes, de longe, pareciam vários raios ao mesmo tempo.</span></li><li class="item" data-filtro="visual"><span class="tag tag-visual">Visual e som</span><span class="texto">O raio some mais rápido depois da explosão.</span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-ajuste">Balanceamento</span><span class="texto">A carta Rede saiu do jogo.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="cartas-de-arma">
+<h2>Cartas de arma</h2>
+<article class="bloco com-midia">
+  <div class="bloco-midia"><figure class="foto"><img src="imagens/fenix-despedaca-e-volta.gif" alt="O golpe que mataria despedaça o player, e os pedaços se juntam de novo" loading="lazy"><figcaption>O golpe que mataria despedaça o player, e os pedaços se juntam de novo</figcaption></figure></div>
+  <div class="bloco-corpo">
+    <h3>Fênix</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A Fênix não te traz mais de volta na hora. O golpe que mataria despedaça o player em câmera lenta, a carta acende e os pedaços se juntam de novo: você volta onde está, com metade da vida, <strong>2,5 s</strong> depois.</span></li><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">Nesses 2,5 s nada te fere: nem bala, nem explosão, nem veneno, nem queda. Você também não anda, não atira e não usa carta. Ser esmagado ou cair fora do mapa ainda mata.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">As outras balas do mesmo disparo não matam mais quem acabou de voltar.</span></li></ul>
+  </div>
+</article>
+<article class="bloco">
+  
+  <div class="bloco-corpo">
+    <h3>Bala de Gelo</h3>
+    
+    <ul class="itens"><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada uma carta de bala que deixa lento quem leva o tiro: ele anda <strong>40%</strong> mais devagar por <strong>2 s</strong>, e cada tiro recomeça os 2 s.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Cada cópia a mais deixa o gelo mais forte: <strong>55%</strong> com duas, e <strong>70%</strong> no máximo.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a carta <strong>Mata-Monstros</strong>: suas balas tiram o dobro de vida dos monstros (Lacraia, Tarântula, Ceifador, Sentinela, Mago Negro e zumbis), no tiro e na explosão.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a carta <strong>Exterminador</strong>, lendária: um tiro seu mata qualquer monstro.</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">Foi adicionada a carta <strong>Antídoto</strong>, lendária: você fica imune a veneno (bala envenenada, mordida da Lacraia e da Tarântula e Fumaça Venenosa).</span></li><li class="item" data-filtro="novo"><span class="tag tag-novo">Novo</span><span class="texto">O Exterminador e o Antídoto são as primeiras cartas de arma lendárias: saem quatro vezes menos que as raras e têm a moldura dourada.</span></li></ul>
+  </div>
+</article>
+</section><section class="secao" id="partida">
+<h2>Partida</h2>
+<ul class="itens soltos"><li class="item" data-filtro="jogabilidade"><span class="tag tag-jogabilidade">Jogabilidade</span><span class="texto">A lanterna não liga mais de dia: numa arena de dia e na sala, apertar a tecla dela mostra "a lanterna só liga no escuro". No anoitecer, à noite e no breu ela liga como antes, e uma lanterna acesa se apaga sozinha quando o round seguinte é de dia.</span></li></ul>
+</section><section class="secao" id="balanceamento">
+<h2>Balanceamento</h2>
+<ul class="itens soltos"><li class="item" data-filtro="balanceamento"><span class="tag tag-buff">Balanceamento ↑</span><span class="texto"><strong>Dano que o escudo aguenta antes de quebrar:</strong> <span class="antes">400</span><span class="seta">⇒</span><span class="depois">600</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Dano de cada Espada de Pedra:</strong> <span class="antes">100</span><span class="seta">⇒</span><span class="depois">50</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Dano das balas com a Gatling:</strong> <span class="antes">35% menor</span><span class="seta">⇒</span><span class="depois">60% menor</span></span></li><li class="item" data-filtro="balanceamento"><span class="tag tag-nerf">Balanceamento ↓</span><span class="texto"><strong>Regeneração do Remendo:</strong> <span class="antes">6</span><span class="seta">⇒</span><span class="depois">3 de vida por segundo</span></span></li></ul>
+</section><section class="secao" id="interface">
+<h2>Interface</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">No todos contra todos, as bolinhas do placar agora mostram quem está vivo: cheia para quem está de pé, vazada para quem caiu. Antes elas ficavam sempre apagadas.</span></li></ul>
+</section><section class="secao" id="correcoes">
+<h2>Correções</h2>
+<ul class="itens soltos"><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Na escada de pedra do templo, e correndo contra uma parede, as pernas do player disparavam. Agora os passos acompanham a corrida.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">A tecla <strong>6</strong> dava um golpe de teste no meio da partida. Ela não faz mais nada.</span></li><li class="item" data-filtro="correcao"><span class="tag tag-correcao">Correção</span><span class="texto">Um convidado não consegue mais usar ferramentas de teste na sala dos outros: munição infinita no lobby, congelar a partida de todos ou trocar a cena do anfitrião.</span></li></ul>
+</section>
+  <p class="vazio" hidden>Nada com essa tag nesta versão.</p>
+  <nav class="navegacao"><a class="nav-versao velha" href="2026-11-18.html"><span>Anterior</span>Marreta, até 4 times e o Santuário gramado</a></nav>
+</main>
+<footer class="rodape">
+  <p>Duelo Clássico · patch notes e cartas · as versões chegam sozinhas pelo launcher</p>
+</footer>
+<script src="filtro.js"></script>
+<script src="cartas.js"></script>
+</body>
+</html>
